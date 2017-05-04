@@ -1,0 +1,101 @@
+<include file="Common:header1"/>
+<div class="container margin-top-10">
+    <ol class="list-inline list-items thumb">
+        <li><a href="#">首页</a></li>
+        <li><a href="">我的商城</a></li>
+        <li><a href="#">个人中心</a></li>
+        <li class="active">我的收藏</li>
+    </ol>
+    <div class="row">
+        <div class="col-xs-6 col-lg-2 col-md-2 left-section">
+            <ul>
+                <li class="title"><i class="glyphicon glyphicon-list-alt"></i>订单中心</li>
+                <li><a href="order.html">我的订单</a></li>
+            </ul>
+            <ul>
+                <li class="title"><i class="glyphicon glyphicon-user"></i>个人中心</li>
+                <li><a href="address.html">地址管理</a></li>
+                <li><a href="enshrine.html" class="active">我的收藏</a></li>
+                <li><a href="message.html">消息提醒</a></li>
+                <li><a href="tickling.html">建议反馈</a></li>
+            </ul>
+            <ul>
+                <li class="title"><i class="glyphicon glyphicon-credit-card"></i>资产中心</li>
+                <!--<li><a href="">我的余额</a></li>-->
+                <li><a href="coupon.html">我的优惠券</a></li>
+            </ul>
+            <ul>
+                <li class="title"><i class="glyphicon glyphicon-cloud"></i>服务中心</li>
+                <li><a href="">退款/退换货跟踪</a></li>
+                <li><a href="">意外保</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-6 col-md-10 col-lg-10">
+            <h4 class="margin-none padding-none">已收藏商品</h4>
+            <hr />
+            <div class="col-xs-6 col-md-3 col-lg-3">
+                <a href="" class="view-goods">
+                    <img src="__IMAGES__/11.png"  alt="..." class="img-rounded">
+                    <i class="glyphicon glyphicon-trash"></i>
+                    <h5>魅族  MX5</h5>
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3 col-lg-3">
+                <a href="" class="view-goods">
+                    <img src="__IMAGES__/11.png"  alt="..." class="img-rounded">
+                    <i class="glyphicon glyphicon-trash"></i>
+                    <h5>魅族  MX5</h5>
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3 col-lg-3">
+                <a href="" class="view-goods">
+                    <img src="__IMAGES__/11.png"  alt="..." class="img-rounded">
+                    <i class="glyphicon glyphicon-trash"></i>
+                    <h5>魅族  MX5</h5>
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3 col-lg-3">
+                <a href="" class="view-goods">
+                    <img src="__IMAGES__/11.png"  alt="..." class="img-rounded">
+                    <i class="glyphicon glyphicon-trash"></i>
+                    <h5>魅族  MX5</h5>
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3 col-lg-3">
+                <a href="" class="view-goods">
+                    <img src="__IMAGES__/11.png"  alt="..." class="img-rounded">
+                    <i class="glyphicon glyphicon-trash"></i>
+                    <h5>魅族  MX5</h5>
+                </a>
+            </div>
+            <div class="col-xs-12 col-md-12 col-lg-12 tcdPageCode"></div>
+        </div>
+    </div>
+</div>
+<script src="__PLUG__/jquery.page.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    $(function(){
+        $(".tcdPageCode").createPage({
+            pageCount:6,
+            current:1,
+            backFn:function(p){
+                console.log(p);
+            }
+        });
+
+        $('.view-goods i').click(function(e){
+            e.preventDefault();
+            alert(1);
+        });
+        $('.view-goods').mouseover(function(e){
+            e.preventDefault();
+            $(this).css('border','1px solid #999');
+            $(this).children('i').show();
+        }).mouseout(function(e){
+            e.preventDefault();
+            $(this).removeAttr('style');
+            $(this).children('i').hide();
+        });
+    });
+</script>
+<include file="Common:footer1"/>

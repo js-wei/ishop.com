@@ -1,0 +1,97 @@
+<include file="Common:header1"/>
+<div class="container margin-top-10">
+	<ol class="list-inline list-items thumb">
+		<li><a href="#">首页</a></li>
+		<li><a href="">我的商城</a></li>
+		<li><a href="#">个人中心</a></li>
+		<li class="active">用户管理</li>
+	</ol>
+	<div class="row">
+		<div class="col-xs-12 col-md-12 col-lg-12">
+			<div class="col-xs-12 col-md-2 col-lg-2" style="position:relative;height:150px;">
+				<style type="text/css">
+					#head_pic{position:absolute;top:60px;left:30px;display:block;width:120px;height:40px;line-height:40px;color:#fff;background-color:#222;opacity:.4;border-radius:4.8px;border:1px solid #fff;}
+				</style>
+				<img id="user_head" src="<notempty name='user.hd_big'>{$user.hd_big}<else />__IMAGES__/h1.png</notempty>	" class="img-rounded" width="150"/>
+				<input type="button" id="head_pic" class="border" size="16" value="修改头像" />
+			</div>
+			<div class="col-xs-12 col-md-10 col-lg-10">
+				<h2>用户<empty name="Think.session._nickname">{$Think.session._name}<else />{$Think.session._nickname}</empty>&nbsp;<a href="javascript:void(0);" class="edit-username"><i class="glyphicon glyphicon-pencil" style="font-size:15px;"></i></a></h2>
+			</div>
+		</div>
+		<div class="col-xs-12 col-md-10 col-lg-10">
+			<div class="header">
+				<h3 class="pull-left">账号安全</h3>
+				<h3 class="pull-right">安全等级: <span class="text-warning">{$safe}</span>&nbsp;<i class="glyphicon glyphicon-question-sign fz pointer question"></i></h3>
+			</div>
+			<table class="table table-responsive">
+				<tr>
+					<td><span style="display:block;margin-top:20px;">密码</span></td>
+					<td><h4>已填写</h4><i class="glyphicon glyphicon-eye-close"></i></td>
+					<td><a href="javascript:void(0);" class="check_info" data-type="1" data-string="修改密码">修改</a></td>
+				</tr>
+				<tr>
+					<td><span style="display:block;margin-top:20px;">邮箱</span></td>
+					<td><empty name="user.email"><h4>未绑定</h4><small>绑定后可通过邮箱找回密码</small><else /><h4 class="text-danger">已绑定</h4><small>可通过邮箱找回密码</small></empty></td>
+					<td><empty name="user.email"><a href="javascript:void(0);" class="check_info" data-type="2" data-string="绑定邮箱">绑定</a><else /><a href="javascript:void(0);" class="check_info" data-type="3"  data-string="修改邮箱">修改</a></empty></td>
+				</tr>
+				<tr>
+					<td><span style="display:block;margin-top:20px;">手机</span></td>
+					<td><empty name="user.tel"><h4>未绑定</h4><small>绑定后可通过手机找回密码</small><else /><h4 class="text-danger">已绑定</h4><small>可通过手机找回密码</small></empty></td>
+					<td><empty name="user.tel"><a href="javascript:void(0);" class="check_info" data-type="4" data-string="绑定手机">绑定</a><else /><a href="javascript:void(0);" class="check_info" data-type="5"  data-string="修改手机">修改</a></empty></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+<link rel="stylesheet" type="text/css" href="__PLUG__/tapmodo/css/jquery.Jcrop.css"/>
+<script src="__PLUG__/tapmodo/js/jquery.Jcrop.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="__PLUG__/Uploadify/uploadify1.css" />
+<script type="text/javascript" src="__PLUG__/Uploadify/jquery.uploadify.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('.question').click(function(e){
+			e.preventDefault();
+			layer.alert("设置密码+30，验证邮箱+30，绑定手机号+40，账号安全等着你拿100满分哦");
+		});
+		$('.edit-username').click(function(e){
+			e.preventDefault();
+			layer.open({
+				title:'修改用户名',
+				type: 2,
+				closeBtn: 1, //不显示关闭按钮
+				anim: 2,
+				area: ['450px', '350px'],
+				shadeClose: true, //开启遮罩关闭
+				content: 'edit_user.html'
+			});
+		});
+		$('.check_info').on('click',function (e) {
+			e.preventDefault();
+			var t = $(this).attr('data-type');
+			var title = $(this).attr('data-string');
+			layer.open({
+				title:title,
+				type: 2,
+				closeBtn: 1, //不显示关闭按钮
+				anim: 2,
+				area: ['590px', '520px'],
+				shadeClose: true, //开启遮罩关闭
+				content: '{:U("user/update_info")}'+"?type="+t
+			});
+		});
+		
+		$('#head_pic').on('click',function(){
+			layer.open({
+				title:'修改头像',
+				type: 2,
+				closeBtn: 1, //不显示关闭按钮
+				anim: 2,
+				area: ['670px', '550px'],
+				shadeClose: true, //开启遮罩关闭
+				content: '{:U("user/set_header")}'
+			});
+		});
+	});
+</script>
+<include file="Common:footer1"/>

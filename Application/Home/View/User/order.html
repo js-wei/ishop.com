@@ -1,0 +1,120 @@
+<include file="Common:header1"/>
+<div class="container margin-top-10">
+    <ol class="list-inline list-items thumb">
+        <li><a href="#">首页</a></li>
+        <li><a href="">我的商城</a></li>
+        <li><a href="#">个人中心</a></li>
+        <li class="active">我的订单</li>
+    </ol>
+    <div class="row">
+        <div class="col-xs-6 col-lg-2 col-md-2 left-section">
+            <ul>
+                <li class="title"><i class="glyphicon glyphicon-list-alt"></i>订单中心</li>
+                <li><a href="order.html" class="active">我的订单</a></li>
+            </ul>
+            <ul>
+                <li class="title"><i class="glyphicon glyphicon-user"></i>个人中心</li>
+                <li><a href="address.html">地址管理</a></li>
+                <li><a href="enshrine.html">我的收藏</a></li>
+                <li><a href="message.html">消息提醒</a></li>
+                <li><a href="tickling.html">建议反馈</a></li>
+            </ul>
+            <ul>
+                <li class="title"><i class="glyphicon glyphicon-credit-card"></i>资产中心</li>
+                <!--<li><a href="">我的余额</a></li>-->
+                <li><a href="coupon.html">我的优惠券</a></li>
+            </ul>
+            <ul>
+                <li class="title"><i class="glyphicon glyphicon-cloud"></i>服务中心</li>
+                <li><a href="">退款/退换货跟踪</a></li>
+                <li><a href="">意外保</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-6 col-lg-10 col-md-10">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#all" role="tab" data-toggle="tab">全部订单</a></li>
+                <li role="presentation"><a href="#payfor" role="tab" data-toggle="tab">待付款</a></li>
+                <li role="presentation"><a href="#wait" role="tab" data-toggle="tab">待发货</a></li>
+                <li role="presentation"><a href="#send" role="tab" data-toggle="tab">已发货</a></li>
+                <li role="presentation"><a href="#got" role="tab" data-toggle="tab">已收货</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="all">
+
+                    <table class="table table-bordered table-responsive table-order">
+                        <tr>
+                            <th>订单明细</th>
+                            <th>商品物流</th>
+                            <th>实付金额</th>
+                            <th>状态</th>
+                            <th>操作</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="col-xs-6 col-md-3 text-right">
+                                    <img src="img/11.png"  alt="..." class="img-thumbnail">
+                                </div>
+                                <div class="col-xs-6 col-md-9">
+                                    <ol class="list-goods-details">
+                                        <li>魅族 MX5</li>
+                                        <li>魅族 EP51蓝牙运动耳机</li>
+                                        <li>魅族路由器 极速版</li>
+                                    </ol>
+                                </div>
+                            </td>
+                            <td>
+                                <ol class="list-goods-details list-items" style="padding-left:10px;">
+                                    <li>2016-11-10 13:10 订单提交成功</li>
+                                    <li>2016-11-10 13:10 配货中</li>
+                                    <li>2016-11-10 16:10 已交由顺丰</li>
+                                    <li>2016-11-10 16:10 由苏州营业部转到江阴航空部</li>
+                                    <li class="list-unstyled">...</li>
+                                    <li class="list-unstyled"><a href="">>>查看详情</a></li>
+                                </ol>
+                            </td>
+                            <td>
+                                金额:120元
+                                优惠券:未使用
+                            </td>
+                            <td>
+                                提交成功
+                                已发货
+                            </td>
+                            <td><a href="">取消订单</a>|<a href="">申请退款</a>|<a href="">查看物流</a>|<a href="">确认收货</a></td>
+                        </tr>
+                    </table>
+
+                </div>
+                <div role="tabpanel" class="tab-pane" id="payfor">
+                    <div class="nothing text-center">
+                        <h3>您暂无此类订单，赶快去下单吧！</h3>
+                        <img src="img/noData.png"/>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="wait">
+                    <div class="nothing text-center">
+                        <h3>您暂无此类订单，赶快去下单吧！</h3>
+                        <img src="img/noData.png"/>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="send">
+                    <div class="nothing text-center">
+                        <h3>您暂无此类订单，赶快去下单吧！</h3>
+                        <img src="img/noData.png"/>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="got">
+                    <div class="nothing text-center">
+                        <h3>您暂无此类订单，赶快去下单吧！</h3>
+                        <img src="img/noData.png"/>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<include file="Common:footer1"/>

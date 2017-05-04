@@ -1,0 +1,331 @@
+[ 2016-11-21T13:33:55+08:00 ] 192.168.56.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.025025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.025085s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0006s ]
+SQL: SELECT `title`,`keywords`,`description`,`image`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`gid`,`column_id`,`title`,`author`,`keywords`,`description`,`ico`,`image`,`file`,`content`,`extend`,`hits`,`com`,`hot`,`new`,`head`,`top`,`img`,`total`,`deplete`,`create_time`,`startTime`,`endTime`,`status` FROM `think_article` WHERE `com` = 1 AND `status` = 0 LIMIT 12   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_carousel` [ RunTime:0.0003s ]
+SQL: SELECT `title`,`url`,`description`,`image`,`sort`,`status`,`time` FROM `think_carousel` ORDER BY sort asc LIMIT 3   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000709s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000847s ]
+NOTIC: [8] Undefined index: address /mnt/share/kunjue.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 177 行.
+NOTIC: [8] Undefined index: phone /mnt/share/kunjue.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 178 行.
+NOTIC: [8] Undefined index: tel /mnt/share/kunjue.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 179 行.
+NOTIC: [8] Undefined index: email /mnt/share/kunjue.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 180 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.318589s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.318672s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.019336s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.019375s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010061s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010115s ]
+
+[ 2016-11-21T13:33:57+08:00 ] 192.168.56.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006639s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0004s ]
+SQL: SELECT `title`,`keywords`,`description`,`image`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`fid`,`title`,`type`,`uri`,`name`,`last`,`tpl` FROM `think_column` WHERE `status` = 0 AND `name` = 'favicon' ORDER BY sort asc LIMIT 1   [ RunTime:0.0000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY sort asc' at line 1
+ [ SQL语句 ] : SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 and fid= ) ORDER BY sort asc 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY sort asc' at line 1
+ [ SQL语句 ] : SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 and fid= ) ORDER BY sort asc 
+
+[ 2016-11-21T15:40:28+08:00 ] 192.168.56.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008036s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0004s ]
+SQL: SELECT `title`,`keywords`,`description`,`image`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`gid`,`column_id`,`title`,`author`,`keywords`,`description`,`ico`,`image`,`file`,`content`,`extend`,`hits`,`com`,`hot`,`new`,`head`,`top`,`img`,`total`,`deplete`,`create_time`,`startTime`,`endTime`,`status` FROM `think_article` WHERE `com` = 1 AND `status` = 0 LIMIT 12   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_carousel` [ RunTime:0.0005s ]
+SQL: SELECT `title`,`url`,`description`,`image`,`sort`,`status`,`time` FROM `think_carousel` ORDER BY sort asc LIMIT 3   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+NOTIC: [8] Undefined index: address /mnt/share/shopping.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 177 行.
+NOTIC: [8] Undefined index: phone /mnt/share/shopping.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 178 行.
+NOTIC: [8] Undefined index: tel /mnt/share/shopping.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 179 行.
+NOTIC: [8] Undefined index: email /mnt/share/shopping.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 180 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.131936s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.131985s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015217s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015274s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.016385s ]
+INFO: [ app_end ] --END-- [ RunTime:0.016435s ]
+
+[ 2016-11-21T15:40:30+08:00 ] 192.168.56.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006885s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0004s ]
+SQL: SELECT `title`,`keywords`,`description`,`image`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`fid`,`title`,`type`,`uri`,`name`,`last`,`tpl` FROM `think_column` WHERE `status` = 0 AND `name` = 'favicon' ORDER BY sort asc LIMIT 1   [ RunTime:0.0001s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY sort asc' at line 1
+ [ SQL语句 ] : SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 and fid= ) ORDER BY sort asc 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY sort asc' at line 1
+ [ SQL语句 ] : SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 and fid= ) ORDER BY sort asc 
+
+[ 2016-11-21T15:41:10+08:00 ] 192.168.56.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008393s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0005s ]
+SQL: SELECT `title`,`keywords`,`description`,`image`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`gid`,`column_id`,`title`,`author`,`keywords`,`description`,`ico`,`image`,`file`,`content`,`extend`,`hits`,`com`,`hot`,`new`,`head`,`top`,`img`,`total`,`deplete`,`create_time`,`startTime`,`endTime`,`status` FROM `think_article` WHERE `com` = 1 AND `status` = 0 LIMIT 12   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_carousel` [ RunTime:0.0012s ]
+SQL: SELECT `title`,`url`,`description`,`image`,`sort`,`status`,`time` FROM `think_carousel` ORDER BY sort asc LIMIT 3   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000229s ]
+NOTIC: [8] Undefined index: address /mnt/share/shopping.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 177 行.
+NOTIC: [8] Undefined index: phone /mnt/share/shopping.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 178 行.
+NOTIC: [8] Undefined index: tel /mnt/share/shopping.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 179 行.
+NOTIC: [8] Undefined index: email /mnt/share/shopping.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 180 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.159489s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.159543s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.035409s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.035458s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009795s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009860s ]
+
+[ 2016-11-21T15:41:12+08:00 ] 192.168.56.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007597s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0005s ]
+SQL: SELECT `title`,`keywords`,`description`,`image`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`gid`,`column_id`,`title`,`author`,`keywords`,`description`,`ico`,`image`,`file`,`content`,`extend`,`hits`,`com`,`hot`,`new`,`head`,`top`,`img`,`total`,`deplete`,`create_time`,`startTime`,`endTime`,`status` FROM `think_article` WHERE `com` = 1 AND `status` = 0 LIMIT 12   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_carousel` [ RunTime:0.0004s ]
+SQL: SELECT `title`,`url`,`description`,`image`,`sort`,`status`,`time` FROM `think_carousel` ORDER BY sort asc LIMIT 3   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+NOTIC: [8] Undefined index: address /mnt/share/shopping.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 177 行.
+NOTIC: [8] Undefined index: phone /mnt/share/shopping.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 178 行.
+NOTIC: [8] Undefined index: tel /mnt/share/shopping.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 179 行.
+NOTIC: [8] Undefined index: email /mnt/share/shopping.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 180 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089438s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089487s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007823s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007864s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007745s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007793s ]
+
+[ 2016-11-21T15:48:50+08:00 ] 192.168.56.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007932s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008096s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0005s ]
+SQL: SELECT `title`,`keywords`,`description`,`image`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`gid`,`column_id`,`title`,`author`,`keywords`,`description`,`ico`,`image`,`file`,`content`,`extend`,`hits`,`com`,`hot`,`new`,`head`,`top`,`img`,`total`,`deplete`,`create_time`,`startTime`,`endTime`,`status` FROM `think_article` WHERE `com` = 1 AND `status` = 0 LIMIT 12   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_carousel` [ RunTime:0.0003s ]
+SQL: SELECT `title`,`url`,`description`,`image`,`sort`,`status`,`time` FROM `think_carousel` ORDER BY sort asc LIMIT 3   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+NOTIC: [8] Undefined index: address /mnt/share/shopping.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 177 行.
+NOTIC: [8] Undefined index: phone /mnt/share/shopping.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 178 行.
+NOTIC: [8] Undefined index: tel /mnt/share/shopping.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 179 行.
+NOTIC: [8] Undefined index: email /mnt/share/shopping.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 180 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092065s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008308s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007549s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007590s ]
+
+[ 2016-11-21T15:48:53+08:00 ] 192.168.56.1 /shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007760s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0005s ]
+SQL: SELECT `title`,`keywords`,`description`,`image`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`fid`,`title`,`type`,`uri`,`name`,`last`,`tpl` FROM `think_column` WHERE `status` = 0 AND `name` = 'shop' ORDER BY sort asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 and fid=1 ) ORDER BY sort asc  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 /mnt/share/shopping.com/Application/Home/Controller/BaseController.class.php 第 118 行.
+NOTIC: [8] Undefined offset: 0 /mnt/share/shopping.com/Application/Home/Controller/BaseController.class.php 第 119 行.
+NOTIC: [8] Undefined offset: 0 /mnt/share/shopping.com/Application/Home/Controller/BaseController.class.php 第 120 行.
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`gid`,`column_id`,`title`,`author`,`keywords`,`description`,`ico`,`image`,`file`,`content`,`extend`,`hits`,`com`,`hot`,`new`,`head`,`top`,`img`,`total`,`deplete`,`create_time`,`startTime`,`endTime`,`status` FROM `think_article` WHERE `com` = 1 AND `status` = 0 LIMIT 12   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `think_column` WHERE `name` = null LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_carousel` [ RunTime:0.0004s ]
+SQL: SELECT `title`,`url`,`description`,`image`,`sort`,`status`,`time` FROM `think_carousel` ORDER BY sort asc LIMIT 3   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+NOTIC: [8] Undefined variable: child_nav /mnt/share/shopping.com/Application/Runtime/Cache/Home/3e24b471de08a8366f7660bb176a5e74.php 第 57 行.
+NOTIC: [8] Undefined variable: page /mnt/share/shopping.com/Application/Runtime/Cache/Home/3e24b471de08a8366f7660bb176a5e74.php 第 74 行.
+NOTIC: [8] Undefined index: address /mnt/share/shopping.com/Application/Runtime/Cache/Home/3e24b471de08a8366f7660bb176a5e74.php 第 87 行.
+NOTIC: [8] Undefined index: phone /mnt/share/shopping.com/Application/Runtime/Cache/Home/3e24b471de08a8366f7660bb176a5e74.php 第 88 行.
+NOTIC: [8] Undefined index: tel /mnt/share/shopping.com/Application/Runtime/Cache/Home/3e24b471de08a8366f7660bb176a5e74.php 第 89 行.
+NOTIC: [8] Undefined index: email /mnt/share/shopping.com/Application/Runtime/Cache/Home/3e24b471de08a8366f7660bb176a5e74.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.096918s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.096970s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006865s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007445s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007484s ]
+
+[ 2016-11-21T15:48:59+08:00 ] 192.168.56.1 /shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007905s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007961s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0004s ]
+SQL: SELECT `title`,`keywords`,`description`,`image`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`fid`,`title`,`type`,`uri`,`name`,`last`,`tpl` FROM `think_column` WHERE `status` = 0 AND `name` = 'shop' ORDER BY sort asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 and fid=1 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 0 /mnt/share/shopping.com/Application/Home/Controller/BaseController.class.php 第 118 行.
+NOTIC: [8] Undefined offset: 0 /mnt/share/shopping.com/Application/Home/Controller/BaseController.class.php 第 119 行.
+NOTIC: [8] Undefined offset: 0 /mnt/share/shopping.com/Application/Home/Controller/BaseController.class.php 第 120 行.
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`gid`,`column_id`,`title`,`author`,`keywords`,`description`,`ico`,`image`,`file`,`content`,`extend`,`hits`,`com`,`hot`,`new`,`head`,`top`,`img`,`total`,`deplete`,`create_time`,`startTime`,`endTime`,`status` FROM `think_article` WHERE `com` = 1 AND `status` = 0 LIMIT 12   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`title` FROM `think_column` WHERE `name` = null LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_carousel` [ RunTime:0.0006s ]
+SQL: SELECT `title`,`url`,`description`,`image`,`sort`,`status`,`time` FROM `think_carousel` ORDER BY sort asc LIMIT 3   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+NOTIC: [8] Undefined variable: child_nav /mnt/share/shopping.com/Application/Runtime/Cache/Home/3e24b471de08a8366f7660bb176a5e74.php 第 57 行.
+NOTIC: [8] Undefined variable: page /mnt/share/shopping.com/Application/Runtime/Cache/Home/3e24b471de08a8366f7660bb176a5e74.php 第 74 行.
+NOTIC: [8] Undefined index: address /mnt/share/shopping.com/Application/Runtime/Cache/Home/3e24b471de08a8366f7660bb176a5e74.php 第 87 行.
+NOTIC: [8] Undefined index: phone /mnt/share/shopping.com/Application/Runtime/Cache/Home/3e24b471de08a8366f7660bb176a5e74.php 第 88 行.
+NOTIC: [8] Undefined index: tel /mnt/share/shopping.com/Application/Runtime/Cache/Home/3e24b471de08a8366f7660bb176a5e74.php 第 89 行.
+NOTIC: [8] Undefined index: email /mnt/share/shopping.com/Application/Runtime/Cache/Home/3e24b471de08a8366f7660bb176a5e74.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.091077s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.091126s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007380s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007420s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007690s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007734s ]
+
+[ 2016-11-21T15:53:12+08:00 ] 192.168.56.1 /Article/index?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007888s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0005s ]
+SQL: SELECT `title`,`keywords`,`description`,`image`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`fid`,`title`,`type`,`uri`,`name`,`last`,`tpl` FROM `think_column` WHERE `status` = 0 AND `name` = '1' ORDER BY sort asc LIMIT 1   [ RunTime:0.0001s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY sort asc' at line 1
+ [ SQL语句 ] : SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 and fid= ) ORDER BY sort asc 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY sort asc' at line 1
+ [ SQL语句 ] : SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 and fid= ) ORDER BY sort asc 
+
+[ 2016-11-21T17:29:32+08:00 ] 192.168.56.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.018228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018323s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0013s ]
+SQL: SELECT `title`,`keywords`,`description`,`image`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`gid`,`column_id`,`title`,`author`,`keywords`,`description`,`ico`,`image`,`file`,`content`,`extend`,`hits`,`com`,`hot`,`new`,`head`,`top`,`img`,`total`,`deplete`,`create_time`,`startTime`,`endTime`,`status` FROM `think_article` WHERE `com` = 1 AND `status` = 0 LIMIT 12   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_carousel` [ RunTime:0.0008s ]
+SQL: SELECT `title`,`url`,`description`,`image`,`sort`,`status`,`time` FROM `think_carousel` ORDER BY sort asc LIMIT 3   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000246s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000345s ]
+NOTIC: [8] Undefined index: address /mnt/share/shopping.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 177 行.
+NOTIC: [8] Undefined index: phone /mnt/share/shopping.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 178 行.
+NOTIC: [8] Undefined index: tel /mnt/share/shopping.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 179 行.
+NOTIC: [8] Undefined index: email /mnt/share/shopping.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 180 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:2.172288s ]
+INFO: [ view_parse ] --END-- [ RunTime:2.172348s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009579s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009619s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008350s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008393s ]
+

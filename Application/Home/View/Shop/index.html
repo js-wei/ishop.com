@@ -1,0 +1,475 @@
+<include file="Common:header2"/>
+<link rel="stylesheet" type="text/css" href="__PLUG__/Font-Awesome-3.2.1/css/layout.css"/>
+<div class="thumbnailb">
+    <div class="fullSlide1">
+        <div class="bd">
+            <ul>
+                <myad where="column_id eq 0" limit="6">
+                    <volist name="myad" id="ad">
+                        <li style="background:url({$ad.image}) center 0 no-repeat;" data-image="{$ad.image}"><a  href="{$ad.url}" target="_blank"></a></li>
+                    </volist>
+                </myad>
+            </ul>
+            <a href="javascript:void(0);" class="prev left"></a>
+            <a href="javascript:void(0);" class="next"></a>
+        </div>
+        <div class="hd">
+            <ul></ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="nav-menu padding-top-20">
+            <ul class="nav-menu-list">
+                <li><a href="">全部分类</a></li>
+                <channellist where="isnav eq 0">
+                    <volist name="channellist" id="vo">
+                        <php>
+                            $_ss = '';
+                        </php>
+                        <li>
+                            <a href="">{$vo.title}</a>
+                            <div class="menu-content">
+                                <div class="col-xs-12 col-md-8 col-lg-8 product-content">
+                                	<volist name="vo.child" id="vo1">
+	                                    <div class="col-xs-12 col-md-6 col-lg-6">
+	                                        <img src="{$vo1.image}" width="108"  alt="{$vo1.title}" class="img-rounded"/>
+	                                        <a href="">{$vo1.title}</a>
+	                                    </div>
+                                        <php>
+                                        $_ss .= ','.$vo1['id'];
+	                                    </php>
+	                                </volist>
+                                </div>
+                                <php>
+                                    $_ss =substr($_ss,1);
+                                </php>
+                                <div class="col-xs-0 col-md-4 col-lg-4 text-center">
+                                    <div class="push-title col-md-12">
+                                        <span class="line left"></span>
+                                        <h4 class="push">本周推荐</h4>
+                                        <span class="line right"></span>
+                                    </div>
+                                    <div class="col-md-12 col-lg-12">
+                                        <div class="push-content">
+                                        	<php>
+	                                    		$day = get_first_last_week_day();
+	                                    		$first = strtotime($day['first']);
+	                                    		$last = strtotime($day['last']);
+	                                    		$__list = M('Article')->where("column_id in ($_ss) and status=0 and head=1 and date between $first and $last")->limit(2)->order('date desc')->select();
+                                        	</php>
+                                        	<volist name="$__list" id="vo">
+                                        		<a href="{:U('/detail/'.$vo['id'])}">
+				        							<img src="$vo['image']" class="img-rounded"/>
+				        						</a>
+                                        	</volist>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </volist>
+                </channellist>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row margin-top-20 product-list">
+        <div class="col-xs-12 col-md-12 col-lg-12">
+            <h1>热品推荐</h1>
+            <div class="picScroll-left">
+                <div class="hd">
+                    <i class="icon-chevron-left next"></i>
+                    <i class="icon-chevron-right prev"></i>
+                </div>
+                <div class="bd">
+                    <div class="tempWrap" style="overflow:hidden; position:relative;">
+                        <ul class="picList">
+                            <list limit="8" where="top eq 1" order="date desc">
+                                <li>
+                                    <div class="pic">
+                                        <a href="{:U('/detail/'.$list['id'])}" target="_blank"><img src="{$list.image}"></a>
+                                        <div class="title"><a href="{:U('/detail/'.$list['id'])}" target="_blank">{$list.title}</a></div>
+                                    </div>
+                                </li>
+                            </list>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="nav-content">
+    <div class="container">
+        <div class="row">
+            <div class="product-block margin-top-10">
+                <div class="col-xs-12 col-md-12 col-lg-12 product-block-title" id="first">
+                    <h3 class="text-first"><span class="">1F</span>为您推荐</h3>
+                    <a href=""><i class="icon-circle-arrow-right"></i>&nbsp;更多</a>
+                </div>
+                <div class="col-xs-12 col-md-12 col-lg-12 text-center product-block-content">
+                    <list  limit="6" where="new eq 1" order="date desc">
+                        <li>
+                            <div class="pic">
+                                <a href="{:U('/detail/'.$list['id'])}" target="_blank"><img src="{$list.image}"></a>
+                                <div class="title"><a href="{:U('/detail/'.$list['id'])}" target="_blank">{$list.title}</a></div>
+                            </div>
+                        </li>
+                        <div class="col-xs-6 col-md-3 col-lg-3 product-block-content-items">
+                            <eq name="list.new_product" value="1"><span class="badge bg-badge bg-new">新品</span></eq>
+                            <eq name="list.hot_product" value="1"><span class="badge bg-badge bg-hot">热卖</span></eq>
+                            <eq name="list.sales_product" value="1"><span class="badge bg-badge bg-sales">促销</span></eq>
+                            <eq name="list.limitation_product" value="1"><span class="badge bg-badge bg-limitation">限量</span></eq>
+                            <div class="product-block-content-desc">
+                                <a href="{:U('/detail/'.$list['id'])}">
+                                    <img src="{$list.image}" alt="" class="img-rounded" />
+                                    <h4>{$list.title}</h4>
+                                    <p>{$list.description}</p>
+                                    <p class="text-danger"><i class="icon-money"></i>:{$list.tprice}￥</p>
+                                </a>
+                            </div>
+                        </div>
+                    </list>
+                </div>
+            </div>
+            <div class="product-block margin-top-10">
+                <div class="col-xs-12 col-md-12 col-lg-12 product-block-title" id="secend">
+                    <h3 class="text-secend"><span class="">2F</span>服装</h3>
+                    <a href=""><i class="icon-circle-arrow-right"></i>&nbsp;更多</a>
+                </div>
+                <div class="col-xs-12 col-md-12 col-lg-12 text-center product-block-content">
+                    <list id="2"  limit="6" where="com eq 1" order="date desc">
+                        <li>
+                            <div class="pic">
+                                <a href="{:U('/detail/'.$list['id'])}" target="_blank"><img src="{$list.image}"></a>
+                                <div class="title"><a href="{:U('/detail/'.$list['id'])}" target="_blank">{$list.title}</a></div>
+                            </div>
+                        </li>
+                        <div class="col-xs-6 col-md-3 col-lg-3 product-block-content-items">
+                            <eq name="list.new_product" value="1"><span class="badge bg-badge bg-new">新品</span></eq>
+                            <eq name="list.hot_product" value="1"><span class="badge bg-badge bg-hot">热卖</span></eq>
+                            <eq name="list.sales_product" value="1"><span class="badge bg-badge bg-sales">促销</span></eq>
+                            <eq name="list.limitation_product" value="1"><span class="badge bg-badge bg-limitation">限量</span></eq>
+                            <div class="product-block-content-desc">
+                                <a href="{:U('/detail/'.$list['id'])}">
+                                    <img src="{$list.image}" alt="" class="img-rounded" />
+                                    <h4>{$list.title}</h4>
+                                    <p>{$list.description}</p>
+                                    <p class="text-danger"><i class="icon-money"></i>:{$list.tprice}￥</p>
+                                </a>
+                            </div>
+                        </div>
+                    </list>
+                </div>
+            </div>
+            <div class="product-block margin-top-10" >
+                <div class="col-xs-12 col-md-12 col-lg-12 product-block-title" id="third">
+                    <h3 class="text-third"><span class="">3F</span>鞋靴</h3>
+                    <a href=""><i class="icon-circle-arrow-right"></i>&nbsp;更多</a>
+                </div>
+                <div class="col-xs-12 col-md-12 col-lg-12 text-center product-block-content">
+                    <list id="6"  limit="6" where="com eq 1" order="date desc">
+                        <li>
+                            <div class="pic">
+                                <a href="{:U('/detail/'.$list['id'])}" target="_blank"><img src="{$list.image}"></a>
+                                <div class="title"><a href="{:U('/detail/'.$list['id'])}" target="_blank">{$list.title}</a></div>
+                            </div>
+                        </li>
+                        <div class="col-xs-6 col-md-3 col-lg-3 product-block-content-items">
+                            <eq name="list.new_product" value="1"><span class="badge bg-badge bg-new">新品</span></eq>
+                            <eq name="list.hot_product" value="1"><span class="badge bg-badge bg-hot">热卖</span></eq>
+                            <eq name="list.sales_product" value="1"><span class="badge bg-badge bg-sales">促销</span></eq>
+                            <eq name="list.limitation_product" value="1"><span class="badge bg-badge bg-limitation">限量</span></eq>
+                            <div class="product-block-content-desc">
+                                <a href="{:U('/detail/'.$list['id'])}">
+                                    <img src="{$list.image}" alt="" class="img-rounded" />
+                                    <h4>{$list.title}</h4>
+                                    <p>{$list.description}</p>
+                                    <p class="text-danger"><i class="icon-money"></i>:{$list.tprice}￥</p>
+                                </a>
+                            </div>
+                        </div>
+                    </list>
+                </div>
+            </div>
+            <div class="product-block margin-top-10">
+                <div class="col-xs-12 col-md-12 col-lg-12 product-block-title" id="four">
+                    <h3 class="text-four"><span class="">4F</span>箱包</h3>
+                    <a href=""><i class="icon-circle-arrow-right"></i>&nbsp;更多</a>
+                </div>
+                <div class="col-xs-12 col-md-12 col-lg-12 text-center product-block-content">
+                    <list id="12"  limit="6" where="com eq 1" order="date desc">
+                        <li>
+                            <div class="pic">
+                                <a href="{:U('/detail/'.$list['id'])}" target="_blank"><img src="{$list.image}"></a>
+                                <div class="title"><a href="{:U('/detail/'.$list['id'])}" target="_blank">{$list.title}</a></div>
+                            </div>
+                        </li>
+                        <div class="col-xs-6 col-md-3 col-lg-3 product-block-content-items">
+                            <eq name="list.new_product" value="1"><span class="badge bg-badge bg-new">新品</span></eq>
+                            <eq name="list.hot_product" value="1"><span class="badge bg-badge bg-hot">热卖</span></eq>
+                            <eq name="list.sales_product" value="1"><span class="badge bg-badge bg-sales">促销</span></eq>
+                            <eq name="list.limitation_product" value="1"><span class="badge bg-badge bg-limitation">限量</span></eq>
+                            <div class="product-block-content-desc">
+                                <a href="{:U('/detail/'.$list['id'])}">
+                                    <img src="{$list.image}" alt="" class="img-rounded" />
+                                    <h4>{$list.title}</h4>
+                                    <p>{$list.description}</p>
+                                    <p class="text-danger"><i class="icon-money"></i>:{$list.tprice}￥</p>
+                                </a>
+                            </div>
+                        </div>
+                    </list>
+                </div>
+            </div>
+            <div class="product-block margin-top-10">
+                <div class="col-xs-12 col-md-12 col-lg-12 product-block-title" id="five">
+                    <h3 class="text-five"><span class="">5F</span>家电</h3>
+                    <a href=""><i class="icon-circle-arrow-right"></i>&nbsp;更多</a>
+                </div>
+                <div class="col-xs-12 col-md-12 col-lg-12 text-center product-block-content">
+                    <list id="18"  limit="6" where="com eq 1" order="date desc">
+                        <li>
+                            <div class="pic">
+                                <a href="{:U('/detail/'.$list['id'])}" target="_blank"><img src="{$list.image}"></a>
+                                <div class="title"><a href="{:U('/detail/'.$list['id'])}" target="_blank">{$list.title}</a></div>
+                            </div>
+                        </li>
+                        <div class="col-xs-6 col-md-3 col-lg-3 product-block-content-items">
+                            <eq name="list.new_product" value="1"><span class="badge bg-badge bg-new">新品</span></eq>
+                            <eq name="list.hot_product" value="1"><span class="badge bg-badge bg-hot">热卖</span></eq>
+                            <eq name="list.sales_product" value="1"><span class="badge bg-badge bg-sales">促销</span></eq>
+                            <eq name="list.limitation_product" value="1"><span class="badge bg-badge bg-limitation">限量</span></eq>
+                            <div class="product-block-content-desc">
+                                <a href="{:U('/detail/'.$list['id'])}">
+                                    <img src="{$list.image}" alt="" class="img-rounded" />
+                                    <h4>{$list.title}</h4>
+                                    <p>{$list.description}</p>
+                                    <p class="text-danger"><i class="icon-money"></i>:{$list.tprice}￥</p>
+                                </a>
+                            </div>
+                        </div>
+                    </list>
+                </div>
+            </div>
+            <div class="product-block margin-top-10">
+                <div class="col-xs-12 col-md-12 col-lg-12 product-block-title" id="six">
+                    <h3 class="text-six"><span class="">6F</span>食品</h3>
+                    <a href=""><i class="icon-circle-arrow-right"></i>&nbsp;更多</a>
+                </div>
+                <div class="col-xs-12 col-md-12 col-lg-12 text-center product-block-content">
+                    <list id="20"  limit="6" where="com eq 1" order="date desc">
+                        <li>
+                            <div class="pic">
+                                <a href="{:U('/detail/'.$list['id'])}" target="_blank"><img src="{$list.image}"></a>
+                                <div class="title"><a href="{:U('/detail/'.$list['id'])}" target="_blank">{$list.title}</a></div>
+                            </div>
+                        </li>
+                        <div class="col-xs-6 col-md-3 col-lg-3 product-block-content-items">
+                            <eq name="list.new_product" value="1"><span class="badge bg-badge bg-new">新品</span></eq>
+                            <eq name="list.hot_product" value="1"><span class="badge bg-badge bg-hot">热卖</span></eq>
+                            <eq name="list.sales_product" value="1"><span class="badge bg-badge bg-sales">促销</span></eq>
+                            <eq name="list.limitation_product" value="1"><span class="badge bg-badge bg-limitation">限量</span></eq>
+                            <div class="product-block-content-desc">
+                                <a href="{:U('/detail/'.$list['id'])}">
+                                    <img src="{$list.image}" alt="" class="img-rounded" />
+                                    <h4>{$list.title}</h4>
+                                    <p>{$list.description}</p>
+                                    <p class="text-danger"><i class="icon-money"></i>:{$list.tprice}￥</p>
+                                </a>
+                            </div>
+                        </div>
+                    </list>
+                </div>
+            </div>
+            <div class="product-block margin-top-10">
+                <div class="col-xs-12 col-md-12 col-lg-12 product-block-title" id="seven">
+                    <h3 class="text-seven"><span class="">7F</span>户外</h3>
+                    <a href=""><i class="icon-circle-arrow-right"></i>&nbsp;更多</a>
+                </div>
+                <div class="col-xs-12 col-md-12 col-lg-12 text-center product-block-content">
+                    <list id="21"  limit="6" where="com eq 1" order="date desc">
+                        <li>
+                            <div class="pic">
+                                <a href="{:U('/detail/'.$list['id'])}" target="_blank"><img src="{$list.image}"></a>
+                                <div class="title"><a href="{:U('/detail/'.$list['id'])}" target="_blank">{$list.title}</a></div>
+                            </div>
+                        </li>
+                        <div class="col-xs-6 col-md-3 col-lg-3 product-block-content-items">
+                            <eq name="list.new_product" value="1"><span class="badge bg-badge bg-new">新品</span></eq>
+                            <eq name="list.hot_product" value="1"><span class="badge bg-badge bg-hot">热卖</span></eq>
+                            <eq name="list.sales_product" value="1"><span class="badge bg-badge bg-sales">促销</span></eq>
+                            <eq name="list.limitation_product" value="1"><span class="badge bg-badge bg-limitation">限量</span></eq>
+                            <div class="product-block-content-desc">
+                                <a href="{:U('/detail/'.$list['id'])}">
+                                    <img src="{$list.image}" alt="" class="img-rounded" />
+                                    <h4>{$list.title}</h4>
+                                    <p>{$list.description}</p>
+                                    <p class="text-danger"><i class="icon-money"></i>:{$list.tprice}￥</p>
+                                </a>
+                            </div>
+                        </div>
+                    </list>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pinlink navbar-example" id="navbar-example">
+        <div class="pin-link">
+            <ul class="nav">
+                <li class="active">
+                    <a href="#first">
+                        <div class="floor">1F</div>
+                        <div class="title">为您推荐</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#secend">
+                        <div class="floor">2F</div>
+                        <div class="title">服装</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#third">
+                        <div class="floor">3F</div>
+                        <div class="title">鞋袜</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#four">
+                        <div class="floor">4F</div>
+                        <div class="title">箱包</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#five">
+                        <div class="floor">5F</div>
+                        <div class="title">家电</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#six">
+                        <div class="floor">6F</div>
+                        <div class="title">食品</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#seven">
+                        <div class="floor">7F</div>
+                        <div class="title">户外</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="__PLUG__/jquery-pin/jquery.pin.js"></script>
+<script src="__JS__/jquery.scrollToTop.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="__PLUG__/rgbaster.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $(".side ul li").hover(function(){
+            $(this).find(".sidebox").stop().animate({"width":"124px"},200).css({"opacity":"1","filter":"Alpha(opacity=100)","background":"#ae1c1c"})
+        },function(){
+            $(this).find(".sidebox").stop().animate({"width":"54px"},200).css({"opacity":"0.8","filter":"Alpha(opacity=80)","background":"#000"})
+        });
+
+        var pin_top = $('#first').offset().top - $('.pinlink').height()/2;
+        var pin_left = $('.picScroll-left').offset().left-$('.pinlink').width()-10;
+
+        $(".pin-link").pin({
+            containerSelector: ".nav-content"
+        });
+
+        $('.pinlink').css({'top':pin_top+'px','left':pin_left+'px'});
+
+        var width = $('.nav-menu').width();
+        var left = $('.nav-menu').offset().left;
+        $('a.left').css('left',left+width+"px");
+
+        var pull_left = $('.product-block:first').offset().left+$('.product-block:first').width()+20;
+        $('#Fixed').css('left',pull_left+'px');
+
+		$(".fullSlide1").slide({ 
+            titCell:".hd ul", 
+            mainCell:".bd ul", 
+            effect:"fold",  
+            autoPlay:true, 
+            autoPage:true, 
+            trigger:"click" ,
+            startFun:function(i,c,s){
+            	var elemet = $('div.bd ul li').eq(i);
+            	var img = elemet.attr('data-image');
+            	RGBaster.colors(img, {
+            	  	exclude: [ 'rgb(255,255,255)', 'rgb(0,0,0)' ],
+				  	success: function(payload) {
+					    elemet.css("background-color", payload.dominant);
+				  	}
+				});
+            }
+        });
+
+        $(".picScroll-left").slide({
+            titCell:".hd ul",
+            mainCell:".bd ul",
+            autoPage:true,
+            effect:"left",
+            autoPlay:true,
+            vis:6
+        });
+
+        $('.nav-menu-list li').hover(function(){
+            $(this).addClass('active');
+            $(this).find('.menu-content').show();
+        },function(){
+            $(this).removeClass('active');
+            $(this).find('.menu-content').hide();
+        });
+
+        $('.list-items-position-relative').hover(function(){
+            $(this).find('ul').show();
+        },function(){
+            $(this).find('ul').hide();
+        });
+
+        $(window).bind('scroll', {
+            fixedOffsetBottom: parseInt($('.scroll-top').css('bottom')),
+            fiexdElement:$('.scroll').children('div').attr('id')
+        },function(e) {
+            var top = $('.product-block:first').offset().top;
+            var scrollTop = $(window).scrollTop();
+            if(scrollTop<top){
+                $('.pin-link ul li:first').addClass('active first');
+            }
+            if(scrollTop>300){
+                $('#goTop').show()
+            }else{
+                $('#goTop').hide();
+            }
+        });
+
+        $('#goTop').click(function() {
+            $('body,html').stop().animate({
+                'scrollTop': 0,
+                'duration': 500,
+                'easing': 'ease-in'
+            })
+        });
+
+        $(".pin-link ul li a").click(function(){
+            var href = $(this).attr("href");
+            var pos = $(href).offset().top;
+            $("html,body").animate({scrollTop: pos}, 500);
+            return false;
+        });
+
+        $('#myScrollspy').on('activate.bs.scrollspy', function () {
+            var currentItem = $(".nav li.active > a").attr('href');
+            var className = currentItem.replace('#','');
+            $('#'+className).children('h3').addClass('text-'+className);
+            $(".nav li.active").addClass(className);
+        });
+    });
+</script>
+<include file="Common:footer2"/>

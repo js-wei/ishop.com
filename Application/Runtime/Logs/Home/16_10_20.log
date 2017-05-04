@@ -1,0 +1,352 @@
+[ 2016-10-20T11:31:52+08:00 ] 192.168.188.184 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006487s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0003s ]
+SQL: SELECT `title`,`keywords`,`description`,`image`,`conact`,`url`,`flink`,`carousel`,`sum`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`gid`,`column_id`,`title`,`author`,`keywords`,`description`,`ico`,`image`,`file`,`content`,`extend`,`hits`,`com`,`hot`,`new`,`head`,`top`,`img`,`total`,`deplete`,`create_time`,`startTime`,`endTime`,`status` FROM `think_article` WHERE `com` = 1 AND `status` = 0 LIMIT 12   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_carousel` [ RunTime:0.0002s ]
+SQL: SELECT `title`,`url`,`description`,`image`,`sort`,`status`,`time` FROM `think_carousel` ORDER BY sort asc LIMIT 3   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8] Undefined index: address /mnt/share/kunjue.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 177 行.
+NOTIC: [8] Undefined index: phone /mnt/share/kunjue.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 178 行.
+NOTIC: [8] Undefined index: tel /mnt/share/kunjue.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 179 行.
+NOTIC: [8] Undefined index: email /mnt/share/kunjue.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 180 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.116928s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.116981s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006461s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006488s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006759s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006798s ]
+
+[ 2016-10-20T11:31:54+08:00 ] 192.168.188.184 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006519s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0004s ]
+SQL: SELECT `title`,`keywords`,`description`,`image`,`conact`,`url`,`flink`,`carousel`,`sum`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0002s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`fid`,`title`,`type`,`uri`,`name`,`last`,`tpl` FROM `think_column` WHERE `status` = 0 AND `name` = 'favicon' ORDER BY sort asc LIMIT 1   [ RunTime:0.0002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY sort asc' at line 1
+ [ SQL语句 ] : SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 and fid= ) ORDER BY sort asc 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY sort asc' at line 1
+ [ SQL语句 ] : SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 and fid= ) ORDER BY sort asc 
+
+[ 2016-10-20T11:32:03+08:00 ] 192.168.188.184 /man.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007344s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0004s ]
+SQL: SELECT `title`,`keywords`,`description`,`image`,`conact`,`url`,`flink`,`carousel`,`sum`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`fid`,`title`,`type`,`uri`,`name`,`last`,`tpl` FROM `think_column` WHERE `status` = 0 AND `name` = 'man' ORDER BY sort asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 and fid=7 ) ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`gid`,`column_id`,`title`,`author`,`keywords`,`description`,`ico`,`image`,`file`,`content`,`extend`,`hits`,`com`,`hot`,`new`,`head`,`top`,`img`,`total`,`deplete`,`create_time`,`startTime`,`endTime`,`status` FROM `think_article` WHERE `com` = 1 AND `status` = 0 LIMIT 12   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`title` FROM `think_column` WHERE `name` = 'man' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_carousel` [ RunTime:0.0005s ]
+SQL: SELECT `title`,`url`,`description`,`image`,`sort`,`status`,`time` FROM `think_carousel` ORDER BY sort asc LIMIT 3   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+NOTIC: [8] Undefined index: address /mnt/share/kunjue.com/Application/Runtime/Cache/Home/c26d2cb935f08bf20a3cf6a7f962c54d.php 第 93 行.
+NOTIC: [8] Undefined index: phone /mnt/share/kunjue.com/Application/Runtime/Cache/Home/c26d2cb935f08bf20a3cf6a7f962c54d.php 第 94 行.
+NOTIC: [8] Undefined index: tel /mnt/share/kunjue.com/Application/Runtime/Cache/Home/c26d2cb935f08bf20a3cf6a7f962c54d.php 第 95 行.
+NOTIC: [8] Undefined index: email /mnt/share/kunjue.com/Application/Runtime/Cache/Home/c26d2cb935f08bf20a3cf6a7f962c54d.php 第 96 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092960s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006491s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006516s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006902s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006955s ]
+
+[ 2016-10-20T11:32:06+08:00 ] 192.168.188.184 /woman.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006947s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007020s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0003s ]
+SQL: SELECT `title`,`keywords`,`description`,`image`,`conact`,`url`,`flink`,`carousel`,`sum`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`fid`,`title`,`type`,`uri`,`name`,`last`,`tpl` FROM `think_column` WHERE `status` = 0 AND `name` = 'woman' ORDER BY sort asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 and fid=7 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`gid`,`column_id`,`title`,`author`,`keywords`,`description`,`ico`,`image`,`file`,`content`,`extend`,`hits`,`com`,`hot`,`new`,`head`,`top`,`img`,`total`,`deplete`,`create_time`,`startTime`,`endTime`,`status` FROM `think_article` WHERE `com` = 1 AND `status` = 0 LIMIT 12   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`title` FROM `think_column` WHERE `name` = 'woman' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_carousel` [ RunTime:0.0003s ]
+SQL: SELECT `title`,`url`,`description`,`image`,`sort`,`status`,`time` FROM `think_carousel` ORDER BY sort asc LIMIT 3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+NOTIC: [8] Undefined index: address /mnt/share/kunjue.com/Application/Runtime/Cache/Home/c26d2cb935f08bf20a3cf6a7f962c54d.php 第 93 行.
+NOTIC: [8] Undefined index: phone /mnt/share/kunjue.com/Application/Runtime/Cache/Home/c26d2cb935f08bf20a3cf6a7f962c54d.php 第 94 行.
+NOTIC: [8] Undefined index: tel /mnt/share/kunjue.com/Application/Runtime/Cache/Home/c26d2cb935f08bf20a3cf6a7f962c54d.php 第 95 行.
+NOTIC: [8] Undefined index: email /mnt/share/kunjue.com/Application/Runtime/Cache/Home/c26d2cb935f08bf20a3cf6a7f962c54d.php 第 96 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.074166s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074234s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006735s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006770s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007172s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007209s ]
+
+[ 2016-10-20T11:32:08+08:00 ] 192.168.188.184 /children.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006623s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0003s ]
+SQL: SELECT `title`,`keywords`,`description`,`image`,`conact`,`url`,`flink`,`carousel`,`sum`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`fid`,`title`,`type`,`uri`,`name`,`last`,`tpl` FROM `think_column` WHERE `status` = 0 AND `name` = 'children' ORDER BY sort asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 and fid=7 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`gid`,`column_id`,`title`,`author`,`keywords`,`description`,`ico`,`image`,`file`,`content`,`extend`,`hits`,`com`,`hot`,`new`,`head`,`top`,`img`,`total`,`deplete`,`create_time`,`startTime`,`endTime`,`status` FROM `think_article` WHERE `com` = 1 AND `status` = 0 LIMIT 12   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`title` FROM `think_column` WHERE `name` = 'children' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_carousel` [ RunTime:0.0003s ]
+SQL: SELECT `title`,`url`,`description`,`image`,`sort`,`status`,`time` FROM `think_carousel` ORDER BY sort asc LIMIT 3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+NOTIC: [8] Undefined index: address /mnt/share/kunjue.com/Application/Runtime/Cache/Home/c26d2cb935f08bf20a3cf6a7f962c54d.php 第 93 行.
+NOTIC: [8] Undefined index: phone /mnt/share/kunjue.com/Application/Runtime/Cache/Home/c26d2cb935f08bf20a3cf6a7f962c54d.php 第 94 行.
+NOTIC: [8] Undefined index: tel /mnt/share/kunjue.com/Application/Runtime/Cache/Home/c26d2cb935f08bf20a3cf6a7f962c54d.php 第 95 行.
+NOTIC: [8] Undefined index: email /mnt/share/kunjue.com/Application/Runtime/Cache/Home/c26d2cb935f08bf20a3cf6a7f962c54d.php 第 96 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073825s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006701s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006736s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006693s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006726s ]
+
+[ 2016-10-20T11:32:09+08:00 ] 192.168.188.184 /whitecollar.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006890s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006940s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0005s ]
+SQL: SELECT `title`,`keywords`,`description`,`image`,`conact`,`url`,`flink`,`carousel`,`sum`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`fid`,`title`,`type`,`uri`,`name`,`last`,`tpl` FROM `think_column` WHERE `status` = 0 AND `name` = 'whitecollar' ORDER BY sort asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 and fid=7 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`gid`,`column_id`,`title`,`author`,`keywords`,`description`,`ico`,`image`,`file`,`content`,`extend`,`hits`,`com`,`hot`,`new`,`head`,`top`,`img`,`total`,`deplete`,`create_time`,`startTime`,`endTime`,`status` FROM `think_article` WHERE `com` = 1 AND `status` = 0 LIMIT 12   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`title` FROM `think_column` WHERE `name` = 'whitecollar' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_carousel` [ RunTime:0.0003s ]
+SQL: SELECT `title`,`url`,`description`,`image`,`sort`,`status`,`time` FROM `think_carousel` ORDER BY sort asc LIMIT 3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+NOTIC: [8] Undefined index: address /mnt/share/kunjue.com/Application/Runtime/Cache/Home/c26d2cb935f08bf20a3cf6a7f962c54d.php 第 93 行.
+NOTIC: [8] Undefined index: phone /mnt/share/kunjue.com/Application/Runtime/Cache/Home/c26d2cb935f08bf20a3cf6a7f962c54d.php 第 94 行.
+NOTIC: [8] Undefined index: tel /mnt/share/kunjue.com/Application/Runtime/Cache/Home/c26d2cb935f08bf20a3cf6a7f962c54d.php 第 95 行.
+NOTIC: [8] Undefined index: email /mnt/share/kunjue.com/Application/Runtime/Cache/Home/c26d2cb935f08bf20a3cf6a7f962c54d.php 第 96 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075078s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075119s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006502s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006529s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008441s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008481s ]
+
+[ 2016-10-20T11:32:11+08:00 ] 192.168.188.184 /bisexual.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009317s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0003s ]
+SQL: SELECT `title`,`keywords`,`description`,`image`,`conact`,`url`,`flink`,`carousel`,`sum`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0002s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`fid`,`title`,`type`,`uri`,`name`,`last`,`tpl` FROM `think_column` WHERE `status` = 0 AND `name` = 'bisexual' ORDER BY sort asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 and fid=7 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`gid`,`column_id`,`title`,`author`,`keywords`,`description`,`ico`,`image`,`file`,`content`,`extend`,`hits`,`com`,`hot`,`new`,`head`,`top`,`img`,`total`,`deplete`,`create_time`,`startTime`,`endTime`,`status` FROM `think_article` WHERE `com` = 1 AND `status` = 0 LIMIT 12   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`title` FROM `think_column` WHERE `name` = 'bisexual' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_carousel` [ RunTime:0.0003s ]
+SQL: SELECT `title`,`url`,`description`,`image`,`sort`,`status`,`time` FROM `think_carousel` ORDER BY sort asc LIMIT 3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+NOTIC: [8] Undefined index: address /mnt/share/kunjue.com/Application/Runtime/Cache/Home/c26d2cb935f08bf20a3cf6a7f962c54d.php 第 93 行.
+NOTIC: [8] Undefined index: phone /mnt/share/kunjue.com/Application/Runtime/Cache/Home/c26d2cb935f08bf20a3cf6a7f962c54d.php 第 94 行.
+NOTIC: [8] Undefined index: tel /mnt/share/kunjue.com/Application/Runtime/Cache/Home/c26d2cb935f08bf20a3cf6a7f962c54d.php 第 95 行.
+NOTIC: [8] Undefined index: email /mnt/share/kunjue.com/Application/Runtime/Cache/Home/c26d2cb935f08bf20a3cf6a7f962c54d.php 第 96 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072144s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072181s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006286s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006316s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006384s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006421s ]
+
+[ 2016-10-20T11:32:16+08:00 ] 192.168.188.184 /medicine.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006644s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0004s ]
+SQL: SELECT `title`,`keywords`,`description`,`image`,`conact`,`url`,`flink`,`carousel`,`sum`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`fid`,`title`,`type`,`uri`,`name`,`last`,`tpl` FROM `think_column` WHERE `status` = 0 AND `name` = 'medicine' ORDER BY sort asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 and fid=2 ) ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`gid`,`column_id`,`title`,`author`,`keywords`,`description`,`ico`,`image`,`file`,`content`,`extend`,`hits`,`com`,`hot`,`new`,`head`,`top`,`img`,`total`,`deplete`,`create_time`,`startTime`,`endTime`,`status` FROM `think_article` WHERE `com` = 1 AND `status` = 0 LIMIT 12   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`title` FROM `think_column` WHERE `name` = 'cupping' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_carousel` [ RunTime:0.0004s ]
+SQL: SELECT `title`,`url`,`description`,`image`,`sort`,`status`,`time` FROM `think_carousel` ORDER BY sort asc LIMIT 3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+NOTIC: [8] Undefined index: address /mnt/share/kunjue.com/Application/Runtime/Cache/Home/c26d2cb935f08bf20a3cf6a7f962c54d.php 第 93 行.
+NOTIC: [8] Undefined index: phone /mnt/share/kunjue.com/Application/Runtime/Cache/Home/c26d2cb935f08bf20a3cf6a7f962c54d.php 第 94 行.
+NOTIC: [8] Undefined index: tel /mnt/share/kunjue.com/Application/Runtime/Cache/Home/c26d2cb935f08bf20a3cf6a7f962c54d.php 第 95 行.
+NOTIC: [8] Undefined index: email /mnt/share/kunjue.com/Application/Runtime/Cache/Home/c26d2cb935f08bf20a3cf6a7f962c54d.php 第 96 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078383s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078434s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006868s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006903s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006557s ]
+
+[ 2016-10-20T11:32:19+08:00 ] 192.168.188.184 /population.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007132s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007183s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0003s ]
+SQL: SELECT `title`,`keywords`,`description`,`image`,`conact`,`url`,`flink`,`carousel`,`sum`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0002s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`fid`,`title`,`type`,`uri`,`name`,`last`,`tpl` FROM `think_column` WHERE `status` = 0 AND `name` = 'population' ORDER BY sort asc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 and fid=7 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`gid`,`column_id`,`title`,`author`,`keywords`,`description`,`ico`,`image`,`file`,`content`,`extend`,`hits`,`com`,`hot`,`new`,`head`,`top`,`img`,`total`,`deplete`,`create_time`,`startTime`,`endTime`,`status` FROM `think_article` WHERE `com` = 1 AND `status` = 0 LIMIT 12   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`title` FROM `think_column` WHERE `name` = 'man' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_carousel` [ RunTime:0.0003s ]
+SQL: SELECT `title`,`url`,`description`,`image`,`sort`,`status`,`time` FROM `think_carousel` ORDER BY sort asc LIMIT 3   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+NOTIC: [8] Undefined index: address /mnt/share/kunjue.com/Application/Runtime/Cache/Home/c26d2cb935f08bf20a3cf6a7f962c54d.php 第 93 行.
+NOTIC: [8] Undefined index: phone /mnt/share/kunjue.com/Application/Runtime/Cache/Home/c26d2cb935f08bf20a3cf6a7f962c54d.php 第 94 行.
+NOTIC: [8] Undefined index: tel /mnt/share/kunjue.com/Application/Runtime/Cache/Home/c26d2cb935f08bf20a3cf6a7f962c54d.php 第 95 行.
+NOTIC: [8] Undefined index: email /mnt/share/kunjue.com/Application/Runtime/Cache/Home/c26d2cb935f08bf20a3cf6a7f962c54d.php 第 96 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072345s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072386s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006948s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006987s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007564s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007623s ]
+
+[ 2016-10-20T12:56:23+08:00 ] 192.168.188.184 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013923s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0007s ]
+SQL: SELECT `title`,`keywords`,`description`,`image`,`conact`,`url`,`flink`,`carousel`,`sum`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`fid`,`title`,`type`,`uri`,`name`,`last`,`tpl` FROM `think_column` WHERE `status` = 0 AND `name` = 'favicon' ORDER BY sort asc LIMIT 1   [ RunTime:0.0001s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY sort asc' at line 1
+ [ SQL语句 ] : SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 and fid= ) ORDER BY sort asc 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY sort asc' at line 1
+ [ SQL语句 ] : SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 and fid= ) ORDER BY sort asc 
+
+[ 2016-10-20T12:56:38+08:00 ] 192.168.188.184 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009844s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0003s ]
+SQL: SELECT `title`,`keywords`,`description`,`image`,`conact`,`url`,`flink`,`carousel`,`sum`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`gid`,`column_id`,`title`,`author`,`keywords`,`description`,`ico`,`image`,`file`,`content`,`extend`,`hits`,`com`,`hot`,`new`,`head`,`top`,`img`,`total`,`deplete`,`create_time`,`startTime`,`endTime`,`status` FROM `think_article` WHERE `com` = 1 AND `status` = 0 LIMIT 12   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_carousel` [ RunTime:0.0006s ]
+SQL: SELECT `title`,`url`,`description`,`image`,`sort`,`status`,`time` FROM `think_carousel` ORDER BY sort asc LIMIT 3   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+NOTIC: [8] Undefined index: address /mnt/share/kunjue.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 177 行.
+NOTIC: [8] Undefined index: phone /mnt/share/kunjue.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 178 行.
+NOTIC: [8] Undefined index: tel /mnt/share/kunjue.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 179 行.
+NOTIC: [8] Undefined index: email /mnt/share/kunjue.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 180 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.117678s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.117762s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009430s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009485s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006776s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006822s ]
+

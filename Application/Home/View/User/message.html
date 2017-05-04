@@ -1,0 +1,89 @@
+<include file="Common:header1"/>
+<div class="container margin-top-10">
+    <ol class="list-inline list-items thumb">
+        <li><a href="#">首页</a></li>
+        <li><a href="">我的商城</a></li>
+        <li><a href="#">个人中心</a></li>
+        <li class="active">消息提醒</li>
+    </ol>
+    <div class="row">
+        <div class="col-xs-6 col-lg-2 col-md-2 left-section">
+            <ul>
+                <li class="title"><i class="glyphicon glyphicon-list-alt"></i>订单中心</li>
+                <li><a href="order.html">我的订单</a></li>
+            </ul>
+            <ul>
+                <li class="title"><i class="glyphicon glyphicon-user"></i>个人中心</li>
+                <li><a href="address.html">地址管理</a></li>
+                <li><a href="enshrine.html">我的收藏</a></li>
+                <li><a href="message.html"  class="active">消息提醒</a></li>
+                <li><a href="tickling.html">建议反馈</a></li>
+            </ul>
+            <ul>
+                <li class="title"><i class="glyphicon glyphicon-credit-card"></i>资产中心</li>
+                <!--<li><a href="">我的余额</a></li>-->
+                <li><a href="coupon.html">我的优惠券</a></li>
+            </ul>
+            <ul>
+                <li class="title"><i class="glyphicon glyphicon-cloud"></i>服务中心</li>
+                <li><a href="">退款/退换货跟踪</a></li>
+                <li><a href="">意外保</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-6 col-md-10 col-lg-10">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#all" role="tab" data-toggle="tab">活动消息</a></li>
+                <li role="presentation"><a href="#payfor" role="tab" data-toggle="tab">交易消息</a></li>
+                <li role="presentation"><a href="#wait" role="tab" data-toggle="tab">系统消息</a></li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content margin-top-20">
+                <div role="tabpanel" class="tab-pane active" id="all-items">
+                    <ul class="list-unstyled list-message">
+                        <li>
+                            <span class="time-line">2016-11-10<br/>15:20<i class="glyphicon glyphicon-record"></i></span>
+                            <h5><input type="checkbox" name="index[]" />
+                                <span class="text-warning">[未读]</span>【魅族商城】11.11买一得二，抢券折上折！活动时间：11月10日－11月12日<a href="">点击查看详情>></a></h5>
+                            <img src="__IMAGES__/l1.jpg" class="img-rounded"/>
+                        </li>
+                        <li>
+                            <span class="time-line">2016-11-10<br/>15:20<i class="glyphicon glyphicon-record"></i></span>
+                            <h5><input type="checkbox" name="index[]" />
+                                <span>[已读]</span>【魅族商城】11.11买一得二，抢券折上折！活动时间：11月10日－11月12日<a href="">点击查看详情>></a></h5>
+                            <img src="__IMAGES__/l2.jpg" class="img-rounded"/>
+                        </li>
+                        <li>
+                            <span class="time-line">2016-11-10<br/>15:20<i class="glyphicon glyphicon-record"></i></span>
+                            <h5><input type="checkbox" name="index[]" />
+                                <span class="text-warning">[未读]</span>【魅族商城】11.11买一得二，抢券折上折！活动时间：11月10日－11月12日<a href="">点击查看详情>></a></h5>
+                            <img src="__IMAGES__/l3.jpg" class="img-rounded"/>
+                        </li>
+                    </ul>
+                    <hr />
+                    <div class="col-xs-12 col-md-12 col-lg-offset-1 margin-top-10">
+                        <label class="padding-left-10 bold-none">
+                            <input type="checkbox" name="all" id="all" value="1" class="checkbox"/>全选本页
+                        </label>
+                        <a href="" class="btn btn-warning"><i class="glyphicon glyphicon-eye-open"></i>&nbsp;标为已读</a>&nbsp;<a href="" class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i>&nbsp;删除消息</a>
+                    </div>
+
+                </div>
+                <div role="tabpanel" class="tab-pane" id="payfor">
+                    <div class="nothing text-center">
+                        <h3>您暂无此类消息提醒！</h3>
+                        <img src="__IMAGES__/noData.png"/>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="wait">
+                    <div class="nothing text-center">
+                        <h3>您暂无此类消息提醒！</h3>
+                        <img src="__IMAGES__/noData.png"/>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-12 col-lg-12 tcdPageCode"></div>
+        </div>
+    </div>
+</div>
+<include file="Common:footer1"/>

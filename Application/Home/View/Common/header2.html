@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>魅族官网-魅族智能手机官方网站</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="__PLUG__/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="__PLUG__/Font-Awesome-3.2.1/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="__CSS__/base.css"/>
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="__JS__/jquery-1.10.1.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="__PLUG__/bootstrap/js/bootstrap.js"></script>
+    <script src="__JS__/jquery.SuperSlide.2.1.1.js"></script>
+</head>
+<body  data-spy="scroll" data-target=".pin-link" data-offset="50" id="myScrollspy">
+<header class="container-fluid margin-top-20 navbar1">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-lg-8 col-md-8">
+                <ul class="list-inline list-items list-margin">
+                    <li><a href="{$site.url}">{$site.title}首页</a></li>
+                    <li><a href="{:U('/shop')}">{$site.title}</a></li>
+                    <li><a href="#2">服务</a></li>
+                    <li><a href="#3">社区</a></li>
+                    <li><a href="{:U('/about')}">关于我们</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-lg-4 col-md-4 text-right">
+                <ul class="list-inline list-items">
+                    <li><a href="{:U('/message')}">消息</a></li>
+                    <li><a href="{:U('/enshrine')}">我的收藏</a></li>
+                    <li><a href="{:U('/order')}">我的订单</a></li>
+                    <li class="list-items-position-relative">
+                        <notempty name="Think.session._id">
+                            <a href="{:U('user/userinfo')}" class="list-items-dropdown">用户<empty name="Think.session._nickname">{$Think.session._name}<else />{$Think.session._nickname}</empty>的商城<span class="caret"></span></a>
+                            <ul class="list-items list-items-position text-left" style="display:none;">
+                                <li><a href="address.html">地址管理</a></li>
+                                <li><a href="coupon.html">我的优惠券</a></li>
+                                <li><a href="tickling.html">问题反馈</a></li>
+                                <hr class="hr" />
+                                <li><a href="{:U('public/logout')}"  class="logout">退出</a></li>
+                            </ul>
+                            <else />
+                            <a href="{:U('/login')}">立即登录</a>
+                        </notempty>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="navbar-header margin-top-20">
+            <button class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+                <i class="glyphicon glyphicon-align-justify" style="color:#fff;"></i>
+            </button>
+            <a href="{$site.url}" class="navbar-brand logo"><img src="{$site.logo}" alt="{$site.title}"></a>
+        </div>
+        <div class="collapse navbar-collapse navbar-right" id="example-navbar-collapse">
+
+        </div>
+    </div>
+    <hr />
+</header>

@@ -1,0 +1,50 @@
+[ 2016-11-02T13:58:00+08:00 ] 192.168.56.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008842s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0005s ]
+SQL: SELECT `title`,`keywords`,`description`,`image`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`gid`,`column_id`,`title`,`author`,`keywords`,`description`,`ico`,`image`,`file`,`content`,`extend`,`hits`,`com`,`hot`,`new`,`head`,`top`,`img`,`total`,`deplete`,`create_time`,`startTime`,`endTime`,`status` FROM `think_article` WHERE `com` = 1 AND `status` = 0 LIMIT 12   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_carousel` [ RunTime:0.0006s ]
+SQL: SELECT `title`,`url`,`description`,`image`,`sort`,`status`,`time` FROM `think_carousel` ORDER BY sort asc LIMIT 3   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+NOTIC: [8] Undefined index: address /mnt/share/kunjue.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 177 行.
+NOTIC: [8] Undefined index: phone /mnt/share/kunjue.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 178 行.
+NOTIC: [8] Undefined index: tel /mnt/share/kunjue.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 179 行.
+NOTIC: [8] Undefined index: email /mnt/share/kunjue.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 180 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.204262s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.204324s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.061426s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.061501s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.022930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.023040s ]
+
+[ 2016-11-02T13:58:02+08:00 ] 192.168.56.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007104s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0004s ]
+SQL: SELECT `title`,`keywords`,`description`,`image`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`fid`,`title`,`type`,`uri`,`name`,`last`,`tpl` FROM `think_column` WHERE `status` = 0 AND `name` = 'favicon' ORDER BY sort asc LIMIT 1   [ RunTime:0.0000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY sort asc' at line 1
+ [ SQL语句 ] : SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 and fid= ) ORDER BY sort asc 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY sort asc' at line 1
+ [ SQL语句 ] : SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 and fid= ) ORDER BY sort asc 
+

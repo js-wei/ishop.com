@@ -1,0 +1,1373 @@
+[ 2016-10-28T05:29:23+08:00 ] 192.168.56.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.053929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.054064s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0008s ]
+SQL: SELECT `title`,`keywords`,`description`,`image`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_carousel` [ RunTime:0.0008s ]
+SQL: SELECT `title`,`url`,`description`,`image`,`sort`,`status`,`time` FROM `think_carousel` ORDER BY sort asc LIMIT 3   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_article` WHERE `column_id` IN ('19') AND `com` = 1 LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_article` WHERE `column_id` IN ('29') AND `com` = 1 LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_article` WHERE `column_id` IN ('25') AND `com` = 1 LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_article` WHERE `column_id` IN ('5') AND `com` = 1 LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_article` WHERE `column_id` IN ('11') AND `com` = 1 LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_article` WHERE `column_id` IN ('13') AND `com` = 1 LIMIT 8   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+NOTIC: [8] Undefined index: logo /mnt/share/ishop.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 29 行.
+NOTIC: [8] Undefined index: address /mnt/share/ishop.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 178 行.
+NOTIC: [8] Undefined index: phone /mnt/share/ishop.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 179 行.
+NOTIC: [8] Undefined index: tel /mnt/share/ishop.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 180 行.
+NOTIC: [8] Undefined index: email /mnt/share/ishop.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 181 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.756444s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.756531s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.049800s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.049887s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.082122s ]
+INFO: [ app_end ] --END-- [ RunTime:0.082215s ]
+
+[ 2016-10-28T05:29:25+08:00 ] 192.168.56.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000128s ]
+
+[ 2016-10-28T05:29:38+08:00 ] 192.168.56.1 /register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.019040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019191s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0007s ]
+SQL: SELECT `title`,`keywords`,`description`,`image`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+NOTIC: [8] Undefined index: logo /mnt/share/ishop.com/Application/Runtime/Cache/Home/3359adbadf95118621a5c500fb3ff893.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.257551s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.257665s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.020878s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.020966s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.019115s ]
+INFO: [ app_end ] --END-- [ RunTime:0.019201s ]
+
+[ 2016-10-28T05:29:45+08:00 ] 192.168.56.1 /register1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.019092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019230s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0009s ]
+SQL: SELECT `title`,`keywords`,`description`,`image`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+NOTIC: [8] Undefined index: logo /mnt/share/ishop.com/Application/Runtime/Cache/Home/17b7fd1a621e992c08b00b8e34d6efb6.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.293828s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.293915s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.018149s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.018235s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.019135s ]
+INFO: [ app_end ] --END-- [ RunTime:0.019351s ]
+
+[ 2016-10-28T05:31:13+08:00 ] 192.168.56.1 /register1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.021077s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021188s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0008s ]
+SQL: SELECT `title`,`keywords`,`description`,`image`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000386s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000477s ]
+NOTIC: [8] Undefined index: logo /mnt/share/ishop.com/Application/Runtime/Cache/Home/17b7fd1a621e992c08b00b8e34d6efb6.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.278405s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.278509s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.024217s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.024323s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.018447s ]
+INFO: [ app_end ] --END-- [ RunTime:0.018550s ]
+
+[ 2016-10-28T15:36:18+08:00 ] 192.168.56.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000625s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000865s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.062676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.062824s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0025s ]
+SQL: SELECT `title`,`keywords`,`description`,`image`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0079s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_carousel` [ RunTime:0.0009s ]
+SQL: SELECT `title`,`url`,`description`,`image`,`sort`,`status`,`time` FROM `think_carousel` ORDER BY sort asc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_article` WHERE `column_id` IN ('19') AND `com` = 1 LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_article` WHERE `column_id` IN ('29') AND `com` = 1 LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_article` WHERE `column_id` IN ('25') AND `com` = 1 LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_article` WHERE `column_id` IN ('5') AND `com` = 1 LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_article` WHERE `column_id` IN ('11') AND `com` = 1 LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_article` WHERE `column_id` IN ('13') AND `com` = 1 LIMIT 8   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000235s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000337s ]
+NOTIC: [8] Undefined index: logo /mnt/share/ishop.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 29 行.
+NOTIC: [8] Undefined index: address /mnt/share/ishop.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 178 行.
+NOTIC: [8] Undefined index: phone /mnt/share/ishop.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 179 行.
+NOTIC: [8] Undefined index: tel /mnt/share/ishop.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 180 行.
+NOTIC: [8] Undefined index: email /mnt/share/ishop.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 181 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.280232s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.280369s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.113105s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.113230s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.090021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.090685s ]
+
+[ 2016-10-28T15:36:22+08:00 ] 192.168.56.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000148s ]
+
+[ 2016-10-28T15:36:34+08:00 ] 192.168.56.1 /register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.033612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.033790s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0017s ]
+SQL: SELECT `title`,`keywords`,`description`,`image`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000249s ]
+NOTIC: [8] Undefined index: logo /mnt/share/ishop.com/Application/Runtime/Cache/Home/3359adbadf95118621a5c500fb3ff893.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.470509s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.470627s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.024743s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.024840s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.030084s ]
+INFO: [ app_end ] --END-- [ RunTime:0.030183s ]
+
+[ 2016-10-28T15:36:51+08:00 ] 192.168.56.1 /register1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.026855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.027038s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0019s ]
+SQL: SELECT `title`,`keywords`,`description`,`image`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000274s ]
+NOTIC: [8] Undefined index: logo /mnt/share/ishop.com/Application/Runtime/Cache/Home/17b7fd1a621e992c08b00b8e34d6efb6.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.502067s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.502256s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.024783s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.025040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.027188s ]
+INFO: [ app_end ] --END-- [ RunTime:0.027393s ]
+
+[ 2016-10-28T15:38:52+08:00 ] 192.168.56.1 /user/send_email.html?_id=0.03288107347446023
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.028653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.028786s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0013s ]
+SQL: SELECT `title`,`keywords`,`description`,`image`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0002s ]
+
+[ 2016-10-28T15:39:34+08:00 ] 192.168.56.1 /user/send_email.html?_id=0.03288107347446023
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.026623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.026827s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0011s ]
+SQL: SELECT `title`,`keywords`,`description`,`image`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0002s ]
+
+[ 2016-10-28T15:40:01+08:00 ] 192.168.56.1 /user/send_email.html?_id=0.3055803433752795
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.030444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.030606s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0012s ]
+SQL: SELECT `title`,`keywords`,`description`,`image`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0003s ]
+
+[ 2016-10-28T15:41:10+08:00 ] 192.168.56.1 /user/send_email.html?_id=0.7569233757152136
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.033350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.033911s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0010s ]
+SQL: SELECT `title`,`keywords`,`description`,`image`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0002s ]
+
+[ 2016-10-28T15:46:06+08:00 ] 192.168.56.1 /register1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.024571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.024703s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0012s ]
+SQL: SELECT `title`,`keywords`,`description`,`image`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000335s ]
+NOTIC: [8] Undefined index: logo /mnt/share/ishop.com/Application/Runtime/Cache/Home/17b7fd1a621e992c08b00b8e34d6efb6.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.922865s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.922981s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.025239s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.025351s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.025123s ]
+INFO: [ app_end ] --END-- [ RunTime:0.025249s ]
+
+[ 2016-10-28T15:46:46+08:00 ] 192.168.56.1 /user/send_email.html?_id=0.24045526959683738
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000148s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.020249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.020399s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0009s ]
+SQL: SELECT `title`,`keywords`,`description`,`image`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0002s ]
+NOTIC: [8192] Function ereg() is deprecated /mnt/share/ishop.com/Application/Common/Common/function.php 第 29 行.
+
+[ 2016-10-28T15:56:58+08:00 ] 192.168.56.1 /user/send_email.html?_id=0.567424378908538
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.021619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021773s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0008s ]
+SQL: SELECT `title`,`keywords`,`description`,`image`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+NOTIC: [8192] Function ereg() is deprecated /mnt/share/ishop.com/Application/Common/Common/function.php 第 29 行.
+
+[ 2016-10-28T16:13:11+08:00 ] 192.168.56.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.065792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.066047s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0011s ]
+SQL: SELECT `title`,`keywords`,`description`,`logo`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `think_carousel` [ RunTime:0.0012s ]
+SQL: SELECT `title`,`url`,`description`,`image`,`thumb`,`sort`,`status`,`time` FROM `think_carousel` ORDER BY sort asc LIMIT 3   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_article` WHERE `column_id` IN ('19') AND `com` = 1 LIMIT 8   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_article` WHERE `column_id` IN ('29') AND `com` = 1 LIMIT 8   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_article` WHERE `column_id` IN ('25') AND `com` = 1 LIMIT 8   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_article` WHERE `column_id` IN ('5') AND `com` = 1 LIMIT 8   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_article` WHERE `column_id` IN ('11') AND `com` = 1 LIMIT 8   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_article` WHERE `column_id` IN ('13') AND `com` = 1 LIMIT 8   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000332s ]
+NOTIC: [8] Undefined index: address /mnt/share/ishop.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 178 行.
+NOTIC: [8] Undefined index: phone /mnt/share/ishop.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 179 行.
+NOTIC: [8] Undefined index: tel /mnt/share/ishop.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 180 行.
+NOTIC: [8] Undefined index: email /mnt/share/ishop.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 181 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.204139s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.204302s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.113869s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.113984s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.053327s ]
+INFO: [ app_end ] --END-- [ RunTime:0.053457s ]
+
+[ 2016-10-28T16:13:14+08:00 ] 192.168.56.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000191s ]
+
+[ 2016-10-28T16:13:29+08:00 ] 192.168.56.1 /register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.028255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.028532s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0013s ]
+SQL: SELECT `title`,`keywords`,`description`,`logo`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000182s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000278s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.528869s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.529013s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.027364s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.027509s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.026454s ]
+INFO: [ app_end ] --END-- [ RunTime:0.026583s ]
+
+[ 2016-10-28T16:13:34+08:00 ] 192.168.56.1 /register.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.026761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.026960s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0017s ]
+SQL: SELECT `title`,`keywords`,`description`,`logo`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0025s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000220s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000323s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.267172s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.267310s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.027103s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.027239s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.027742s ]
+INFO: [ app_end ] --END-- [ RunTime:0.027874s ]
+
+[ 2016-10-28T16:13:39+08:00 ] 192.168.56.1 /register.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.026681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.026844s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0010s ]
+SQL: SELECT `title`,`keywords`,`description`,`logo`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000327s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.275577s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.275739s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.030515s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.030656s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.030770s ]
+INFO: [ app_end ] --END-- [ RunTime:0.030905s ]
+
+[ 2016-10-28T16:13:42+08:00 ] 192.168.56.1 /register1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.029706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.029916s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0011s ]
+SQL: SELECT `title`,`keywords`,`description`,`logo`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000219s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000330s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.494033s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.494182s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.026023s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.026141s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.026905s ]
+INFO: [ app_end ] --END-- [ RunTime:0.027208s ]
+
+[ 2016-10-28T16:13:53+08:00 ] 192.168.56.1 /login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.029486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.029659s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0014s ]
+SQL: SELECT `title`,`keywords`,`description`,`logo`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.469638s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.469799s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.027879s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.028018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.027629s ]
+INFO: [ app_end ] --END-- [ RunTime:0.027772s ]
+
+[ 2016-10-28T16:13:54+08:00 ] 192.168.56.1 /public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.031416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.031567s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.030540s ]
+INFO: [ app_end ] --END-- [ RunTime:0.030691s ]
+
+[ 2016-10-28T16:13:58+08:00 ] 192.168.56.1 /login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.026422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.026603s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0012s ]
+SQL: SELECT `title`,`keywords`,`description`,`logo`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000275s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.407506s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.407657s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.035704s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.035820s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.032302s ]
+INFO: [ app_end ] --END-- [ RunTime:0.032418s ]
+
+[ 2016-10-28T16:14:00+08:00 ] 192.168.56.1 /public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.027701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.027919s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.026635s ]
+INFO: [ app_end ] --END-- [ RunTime:0.026879s ]
+
+[ 2016-10-28T16:14:44+08:00 ] 192.168.56.1 /login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.033903s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.034078s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0012s ]
+SQL: SELECT `title`,`keywords`,`description`,`logo`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0027s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000233s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000343s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.434259s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.434390s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.034466s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.034674s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.032908s ]
+INFO: [ app_end ] --END-- [ RunTime:0.033031s ]
+
+[ 2016-10-28T16:14:45+08:00 ] 192.168.56.1 /public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.027243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.027420s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.029559s ]
+INFO: [ app_end ] --END-- [ RunTime:0.029776s ]
+
+[ 2016-10-28T16:15:00+08:00 ] 192.168.56.1 /user/forget_email.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.029250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.029487s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0011s ]
+SQL: SELECT `title`,`keywords`,`description`,`logo`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000382s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.457346s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.457515s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.028297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.028459s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.028244s ]
+INFO: [ app_end ] --END-- [ RunTime:0.028374s ]
+
+[ 2016-10-28T16:15:01+08:00 ] 192.168.56.1 /public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.034475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.034663s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.029473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.029624s ]
+
+[ 2016-10-28T16:15:56+08:00 ] 192.168.56.1 /user/forget_handler.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.027107s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.027328s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0012s ]
+SQL: SELECT `title`,`keywords`,`description`,`logo`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_member` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`username`,`nickname`,`password`,`email`,`qq`,`tel`,`hd`,`hd_big`,`type`,`hd_middle`,`hd_small`,`create_time`,`status`,`last_login_time`,`last_login_ip` FROM `think_member` WHERE `username` = 'jswei30' AND `email` = '524314430@qq.com' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2016-10-28T16:16:50+08:00 ] 192.168.56.1 /user/forget_handler.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.029553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.029747s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0012s ]
+SQL: SELECT `title`,`keywords`,`description`,`logo`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+
+[ 2016-10-28T16:17:02+08:00 ] 192.168.56.1 /user/forget_email.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.030383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.030583s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0012s ]
+SQL: SELECT `title`,`keywords`,`description`,`logo`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000260s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.414861s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.415002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.028518s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.028674s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.037868s ]
+INFO: [ app_end ] --END-- [ RunTime:0.037979s ]
+
+[ 2016-10-28T16:17:04+08:00 ] 192.168.56.1 /public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.026580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.026721s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.030888s ]
+INFO: [ app_end ] --END-- [ RunTime:0.031209s ]
+
+[ 2016-10-28T16:20:15+08:00 ] 192.168.56.1 /public/verify.html?_id=0.33768791838999257
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.027101s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.027265s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.029859s ]
+INFO: [ app_end ] --END-- [ RunTime:0.030075s ]
+
+[ 2016-10-28T16:20:17+08:00 ] 192.168.56.1 /public/verify.html?_id=0.33768791838999257?_id=0.4293921838784003
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.027698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.027855s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.028012s ]
+INFO: [ app_end ] --END-- [ RunTime:0.028185s ]
+
+[ 2016-10-28T16:20:21+08:00 ] 192.168.56.1 /public/verify.html?_id=0.33768791838999257?_id=0.4293921838784003?_id=0.7640109285708849
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.028905s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.029092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.026814s ]
+INFO: [ app_end ] --END-- [ RunTime:0.026977s ]
+
+[ 2016-10-28T16:20:34+08:00 ] 192.168.56.1 /user/forget_handler.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.031809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.032014s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0015s ]
+SQL: SELECT `title`,`keywords`,`description`,`logo`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_member` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`username`,`nickname`,`password`,`email`,`qq`,`tel`,`hd`,`hd_big`,`type`,`hd_middle`,`hd_small`,`create_time`,`status`,`last_login_time`,`last_login_ip` FROM `think_member` WHERE `username` = 'jswei30' AND `email` = '524314430@qq.com' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-10-28T16:20:54+08:00 ] 192.168.56.1 /user/forget_email.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000167s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.029488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.029710s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0012s ]
+SQL: SELECT `title`,`keywords`,`description`,`logo`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000278s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.791549s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.791729s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.028018s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.028169s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.027358s ]
+INFO: [ app_end ] --END-- [ RunTime:0.027497s ]
+
+[ 2016-10-28T16:20:55+08:00 ] 192.168.56.1 /public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.026946s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.027099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.028267s ]
+INFO: [ app_end ] --END-- [ RunTime:0.028432s ]
+
+[ 2016-10-28T16:21:31+08:00 ] 192.168.56.1 /user/forget_handler.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.032751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.033036s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0011s ]
+SQL: SELECT `title`,`keywords`,`description`,`logo`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_member` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`username`,`nickname`,`password`,`email`,`qq`,`tel`,`hd`,`hd_big`,`type`,`hd_middle`,`hd_small`,`create_time`,`status`,`last_login_time`,`last_login_ip` FROM `think_member` WHERE `username` = 'jswei30' AND `email` = '524314430@qq.com' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-10-28T16:22:21+08:00 ] 192.168.56.1 /user/forget_email.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.026072s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.026214s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0012s ]
+SQL: SELECT `title`,`keywords`,`description`,`logo`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000265s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.469411s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.469554s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.030177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.030287s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.026682s ]
+INFO: [ app_end ] --END-- [ RunTime:0.026803s ]
+
+[ 2016-10-28T16:22:22+08:00 ] 192.168.56.1 /public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000167s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.028026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.028180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.026030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.026163s ]
+
+[ 2016-10-28T16:23:13+08:00 ] 192.168.56.1 /user/forget_handler.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.033211s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.033466s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0023s ]
+SQL: SELECT `title`,`keywords`,`description`,`logo`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_member` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`username`,`nickname`,`password`,`email`,`qq`,`tel`,`hd`,`hd_big`,`type`,`hd_middle`,`hd_small`,`create_time`,`status`,`last_login_time`,`last_login_ip` FROM `think_member` WHERE `username` = 'jswei30' AND `email` = '524314430@qq.com' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: REPLY_EMAIL /mnt/share/ishop.com/Application/Common/Common/function.php 第 898 行.
+NOTIC: [8] Undefined index: REPLY_NAME /mnt/share/ishop.com/Application/Common/Common/function.php 第 899 行.
+
+[ 2016-10-28T16:23:17+08:00 ] 192.168.56.1 /login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.028507s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.028662s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0011s ]
+SQL: SELECT `title`,`keywords`,`description`,`logo`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000692s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.966901s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.967106s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.051066s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.051348s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.049305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.049445s ]
+
+[ 2016-10-28T16:23:19+08:00 ] 192.168.56.1 /public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.022681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.022828s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.041602s ]
+INFO: [ app_end ] --END-- [ RunTime:0.041760s ]
+
+[ 2016-10-28T16:26:43+08:00 ] 192.168.56.1 /login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.029740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.029916s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0012s ]
+SQL: SELECT `title`,`keywords`,`description`,`logo`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000277s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.415413s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.415595s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.033123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.033248s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.029710s ]
+INFO: [ app_end ] --END-- [ RunTime:0.029841s ]
+
+[ 2016-10-28T16:26:46+08:00 ] 192.168.56.1 /public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.027935s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.028099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.038135s ]
+INFO: [ app_end ] --END-- [ RunTime:0.038328s ]
+
+[ 2016-10-28T16:27:12+08:00 ] 192.168.56.1 /user/login_handler.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.025650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.025816s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0012s ]
+SQL: SELECT `title`,`keywords`,`description`,`logo`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_member` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`username`,`nickname`,`password`,`email`,`qq`,`tel`,`hd`,`hd_big`,`type`,`hd_middle`,`hd_small`,`create_time`,`status`,`last_login_time`,`last_login_ip` FROM `think_member` WHERE `email` = '524314430@qq.com' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `think_member` SET `last_login_time`='1477643232',`last_login_ip`='192.168.56.1',`type`='0' WHERE `id` = 3 [ RunTime:0.0035s ]
+
+[ 2016-10-28T16:27:15+08:00 ] 192.168.56.1 /user/userinfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000164s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.033180s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.033367s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0017s ]
+SQL: SELECT `title`,`keywords`,`description`,`logo`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_member` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`username`,`nickname`,`password`,`email`,`qq`,`tel`,`hd`,`hd_big`,`type`,`hd_middle`,`hd_small`,`create_time`,`status`,`last_login_time`,`last_login_ip` FROM `think_member` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000290s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000468s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.963333s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.963483s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.029838s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.029977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.030099s ]
+INFO: [ app_end ] --END-- [ RunTime:0.030241s ]
+
+[ 2016-10-28T16:27:52+08:00 ] 192.168.56.1 /user/set_header.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.034536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.034699s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0016s ]
+SQL: SELECT `title`,`keywords`,`description`,`logo`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.315397s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.315530s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.025753s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.025862s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.028135s ]
+INFO: [ app_end ] --END-- [ RunTime:0.028232s ]
+
+[ 2016-10-28T16:28:53+08:00 ] 192.168.56.1 /user/userinfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.026466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.026602s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0010s ]
+SQL: SELECT `title`,`keywords`,`description`,`logo`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_member` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`username`,`nickname`,`password`,`email`,`qq`,`tel`,`hd`,`hd_big`,`type`,`hd_middle`,`hd_small`,`create_time`,`status`,`last_login_time`,`last_login_ip` FROM `think_member` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000271s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.451869s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.452075s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.028077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.028488s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.028161s ]
+INFO: [ app_end ] --END-- [ RunTime:0.028284s ]
+
+[ 2016-10-28T16:28:57+08:00 ] 192.168.56.1 /user/set_header.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000128s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.047337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.047581s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0013s ]
+SQL: SELECT `title`,`keywords`,`description`,`logo`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000260s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.290532s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.290790s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.038998s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.039205s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.041202s ]
+INFO: [ app_end ] --END-- [ RunTime:0.041322s ]
+
+[ 2016-10-28T16:29:37+08:00 ] 192.168.56.1 /user/set_header.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.034247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.034398s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0017s ]
+SQL: SELECT `title`,`keywords`,`description`,`logo`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000271s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.341117s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.341270s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.034779s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.034927s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.040145s ]
+INFO: [ app_end ] --END-- [ RunTime:0.040286s ]
+
+[ 2016-10-28T16:30:09+08:00 ] 192.168.56.1 /user/userinfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.020579s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.020714s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0015s ]
+SQL: SELECT `title`,`keywords`,`description`,`logo`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_member` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username`,`nickname`,`password`,`email`,`qq`,`tel`,`hd`,`hd_big`,`type`,`hd_middle`,`hd_small`,`create_time`,`status`,`last_login_time`,`last_login_ip` FROM `think_member` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000252s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.354341s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.354464s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.021932s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.022032s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.022348s ]
+INFO: [ app_end ] --END-- [ RunTime:0.022471s ]
+
+[ 2016-10-28T16:30:12+08:00 ] 192.168.56.1 /user/set_header.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.025729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.025864s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0010s ]
+SQL: SELECT `title`,`keywords`,`description`,`logo`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000256s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.248549s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.248669s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.028419s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.028552s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.026792s ]
+INFO: [ app_end ] --END-- [ RunTime:0.026907s ]
+
+[ 2016-10-28T16:30:44+08:00 ] 192.168.56.1 /user/set_header.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.021818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021947s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0012s ]
+SQL: SELECT `title`,`keywords`,`description`,`logo`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.229587s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.229713s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.028133s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.028232s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.027243s ]
+INFO: [ app_end ] --END-- [ RunTime:0.027340s ]
+
+[ 2016-10-28T16:30:52+08:00 ] 192.168.56.1 /user/userinfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.029505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.029659s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0009s ]
+SQL: SELECT `title`,`keywords`,`description`,`logo`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_member` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username`,`nickname`,`password`,`email`,`qq`,`tel`,`hd`,`hd_big`,`type`,`hd_middle`,`hd_small`,`create_time`,`status`,`last_login_time`,`last_login_ip` FROM `think_member` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000211s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.376437s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.376580s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.027258s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.027377s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.027510s ]
+INFO: [ app_end ] --END-- [ RunTime:0.027659s ]
+
+[ 2016-10-28T16:30:56+08:00 ] 192.168.56.1 /user/set_header.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.028855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.029037s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0015s ]
+SQL: SELECT `title`,`keywords`,`description`,`logo`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000344s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.254980s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.255133s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.029751s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.029878s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.032066s ]
+INFO: [ app_end ] --END-- [ RunTime:0.032173s ]
+
+[ 2016-10-28T16:31:55+08:00 ] 192.168.56.1 /user/set_header.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.024479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.024633s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0013s ]
+SQL: SELECT `title`,`keywords`,`description`,`logo`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.238127s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.238337s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.035446s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.035624s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.032550s ]
+INFO: [ app_end ] --END-- [ RunTime:0.032659s ]
+
+[ 2016-10-28T16:42:39+08:00 ] 192.168.56.1 /user/set_header.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000167s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.024916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.025053s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0013s ]
+SQL: SELECT `title`,`keywords`,`description`,`logo`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.233270s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.233407s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.030113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.030222s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.035030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.035141s ]
+
+[ 2016-10-28T16:43:27+08:00 ] 192.168.56.1 /user/upfile.html?rndcode=1480723198746
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000149s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.025254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.025460s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0008s ]
+SQL: SELECT `title`,`keywords`,`description`,`logo`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0002s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /mnt/share/ishop.com/ThinkPHP/Library/Think/Upload.class.php 第 176 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /mnt/share/ishop.com/ThinkPHP/Library/Think/Upload.class.php 第 176 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /mnt/share/ishop.com/ThinkPHP/Library/Think/Upload.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `think_member` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `think_member` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: sourceUrl /mnt/share/ishop.com/Application/Home/Controller/UserController.class.php 第 559 行.
+SQL: UPDATE `think_member` SET `hd`=NULL,`hd_big`='/Uploads/HeadPic/20161028/58130faf307ac.png',`hd_middle`='/Uploads/HeadPic/20161028/58130faf425ff.png',`hd_small`='/Uploads/HeadPic/20161028/58130faf518e1.png',`date`='1477644207' WHERE `id` = 3 [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.027851s ]
+INFO: [ app_end ] --END-- [ RunTime:0.028025s ]
+
+[ 2016-10-28T16:44:19+08:00 ] 192.168.56.1 /user/edit_user.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.023899s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.024054s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0015s ]
+SQL: SELECT `title`,`keywords`,`description`,`logo`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000272s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.220857s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.220992s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.023302s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.023409s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.025496s ]
+INFO: [ app_end ] --END-- [ RunTime:0.025602s ]
+
+[ 2016-10-28T16:44:21+08:00 ] 192.168.56.1 /user/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.027797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.027937s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0016s ]
+SQL: SELECT `title`,`keywords`,`description`,`logo`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.029268s ]
+INFO: [ app_end ] --END-- [ RunTime:0.029405s ]
+
+[ 2016-10-28T16:44:57+08:00 ] 192.168.56.1 /user/userinfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.022957s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.023092s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0011s ]
+SQL: SELECT `title`,`keywords`,`description`,`logo`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_member` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username`,`nickname`,`password`,`email`,`qq`,`tel`,`hd`,`hd_big`,`type`,`hd_middle`,`hd_small`,`create_time`,`status`,`last_login_time`,`last_login_ip` FROM `think_member` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000284s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000387s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.322288s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.322502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.021587s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.021701s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.022041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.022172s ]
+
+[ 2016-10-28T16:45:40+08:00 ] 192.168.56.1 /shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.021799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021933s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0010s ]
+SQL: SELECT `title`,`keywords`,`description`,`logo`,`conact`,`url`,`flink`,`carousel`,`sum`,`is_shard`,`copyright`,`icp`,`shard`,`code`,`date`,`site_show`,`status` FROM `think_config` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type`,`uri`,`last`,`tpl` FROM `think_column` WHERE ( status=0 ) ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_carousel` [ RunTime:0.0011s ]
+SQL: SELECT `title`,`url`,`description`,`image`,`thumb`,`sort`,`status`,`time` FROM `think_carousel` ORDER BY sort asc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_article` WHERE `column_id` IN ('19') AND `com` = 1 LIMIT 8   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_article` WHERE `column_id` IN ('29') AND `com` = 1 LIMIT 8   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_article` WHERE `column_id` IN ('25') AND `com` = 1 LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_article` WHERE `column_id` IN ('5') AND `com` = 1 LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_article` WHERE `column_id` IN ('11') AND `com` = 1 LIMIT 8   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_article` WHERE `column_id` IN ('13') AND `com` = 1 LIMIT 8   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: attr /mnt/share/ishop.com/ThinkPHP/Library/Think/Template/TagLib/Lists.class.php 第 1321 行.
+SQL: SELECT * FROM `think_column` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_column` WHERE (  status = 0 )  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: attr /mnt/share/ishop.com/ThinkPHP/Library/Think/Template/TagLib/Lists.class.php 第 1321 行.
+SQL: SELECT * FROM `think_column` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_column` WHERE (  status = 0 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: attr /mnt/share/ishop.com/ThinkPHP/Library/Think/Template/TagLib/Lists.class.php 第 1321 行.
+SQL: SELECT * FROM `think_column` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_column` WHERE (  status = 0 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: attr /mnt/share/ishop.com/ThinkPHP/Library/Think/Template/TagLib/Lists.class.php 第 1321 行.
+SQL: SELECT * FROM `think_column` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_column` WHERE (  status = 0 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: attr /mnt/share/ishop.com/ThinkPHP/Library/Think/Template/TagLib/Lists.class.php 第 1321 行.
+SQL: SELECT * FROM `think_column` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_column` WHERE (  status = 0 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: attr /mnt/share/ishop.com/ThinkPHP/Library/Think/Template/TagLib/Lists.class.php 第 1321 行.
+SQL: SELECT * FROM `think_column` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_column` WHERE (  status = 0 )  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: attr /mnt/share/ishop.com/ThinkPHP/Library/Think/Template/TagLib/Lists.class.php 第 1321 行.
+SQL: SELECT * FROM `think_column` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_column` WHERE (  status = 0 )  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: attr /mnt/share/ishop.com/ThinkPHP/Library/Think/Template/TagLib/Lists.class.php 第 1321 行.
+SQL: SELECT * FROM `think_column` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_column` WHERE (  status = 0 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: order /mnt/share/ishop.com/ThinkPHP/Library/Think/Template/TagLib/Lists.class.php 第 497 行.
+NOTIC: [8] Undefined index: cid /mnt/share/ishop.com/ThinkPHP/Library/Think/Template/TagLib/Lists.class.php 第 889 行.
+NOTIC: [8] Undefined index: limit /mnt/share/ishop.com/ThinkPHP/Library/Think/Template/TagLib/Lists.class.php 第 891 行.
+NOTIC: [8] Undefined variable: order /mnt/share/ishop.com/ThinkPHP/Library/Think/Template/TagLib/Lists.class.php 第 912 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000376s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000445s ]
+SQL: SHOW COLUMNS FROM `think_ad` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_ad` WHERE ( column_id = 0 and status = 0 ) LIMIT 6   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_column` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_column` WHERE ( isnav = 0 and status = 0 )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `think_article` WHERE ( column_id in (3,4,5) and status=0 and head=1 and date between 1477238400 and 1477756800 ) ORDER BY date desc LIMIT 2   [ RunTime:0.0025s ]
+NOTIC: [8] Array to string conversion /mnt/share/ishop.com/Application/Runtime/Cache/Home/58c9b418295366ada92ef91abf88ff39.php 第 101 行.
+NOTIC: [8] Undefined variable: Array /mnt/share/ishop.com/Application/Runtime/Cache/Home/58c9b418295366ada92ef91abf88ff39.php 第 101 行.
+SQL: SELECT * FROM `think_article` WHERE ( column_id in (7,8,9,10,11) and status=0 and head=1 and date between 1477238400 and 1477756800 ) ORDER BY date desc LIMIT 2   [ RunTime:0.0004s ]
+NOTIC: [8] Array to string conversion /mnt/share/ishop.com/Application/Runtime/Cache/Home/58c9b418295366ada92ef91abf88ff39.php 第 101 行.
+NOTIC: [8] Undefined variable: Array /mnt/share/ishop.com/Application/Runtime/Cache/Home/58c9b418295366ada92ef91abf88ff39.php 第 101 行.
+SQL: SELECT * FROM `think_article` WHERE ( column_id in (13,14,15,16,17) and status=0 and head=1 and date between 1477238400 and 1477756800 ) ORDER BY date desc LIMIT 2   [ RunTime:0.0002s ]
+NOTIC: [8] Array to string conversion /mnt/share/ishop.com/Application/Runtime/Cache/Home/58c9b418295366ada92ef91abf88ff39.php 第 101 行.
+NOTIC: [8] Undefined variable: Array /mnt/share/ishop.com/Application/Runtime/Cache/Home/58c9b418295366ada92ef91abf88ff39.php 第 101 行.
+SQL: SELECT * FROM `think_article` WHERE ( column_id in (19) and status=0 and head=1 and date between 1477238400 and 1477756800 ) ORDER BY date desc LIMIT 2   [ RunTime:0.0002s ]
+NOTIC: [8] Array to string conversion /mnt/share/ishop.com/Application/Runtime/Cache/Home/58c9b418295366ada92ef91abf88ff39.php 第 101 行.
+NOTIC: [8] Undefined variable: Array /mnt/share/ishop.com/Application/Runtime/Cache/Home/58c9b418295366ada92ef91abf88ff39.php 第 101 行.
+SQL: SELECT * FROM `think_article` WHERE ( column_id in (26,27,28,29) and status=0 and head=1 and date between 1477238400 and 1477756800 ) ORDER BY date desc LIMIT 2   [ RunTime:0.0002s ]
+NOTIC: [8] Array to string conversion /mnt/share/ishop.com/Application/Runtime/Cache/Home/58c9b418295366ada92ef91abf88ff39.php 第 101 行.
+NOTIC: [8] Undefined variable: Array /mnt/share/ishop.com/Application/Runtime/Cache/Home/58c9b418295366ada92ef91abf88ff39.php 第 101 行.
+SQL: SELECT * FROM `think_article` WHERE ( column_id in (22,23,24,25) and status=0 and head=1 and date between 1477238400 and 1477756800 ) ORDER BY date desc LIMIT 2   [ RunTime:0.0003s ]
+NOTIC: [8] Array to string conversion /mnt/share/ishop.com/Application/Runtime/Cache/Home/58c9b418295366ada92ef91abf88ff39.php 第 101 行.
+NOTIC: [8] Undefined variable: Array /mnt/share/ishop.com/Application/Runtime/Cache/Home/58c9b418295366ada92ef91abf88ff39.php 第 101 行.
+NOTIC: [8] Use of undefined constant Article - assumed 'Article' /mnt/share/ishop.com/Application/Runtime/Cache/Home/58c9b418295366ada92ef91abf88ff39.php 第 125 行.
+SQL: SELECT * FROM `think_article` WHERE ( top = 1 and status = 0 ) ORDER BY date desc LIMIT 8   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_column` LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant Article - assumed 'Article' /mnt/share/ishop.com/Application/Runtime/Cache/Home/58c9b418295366ada92ef91abf88ff39.php 第 147 行.
+SQL: SELECT * FROM `think_article` WHERE ( new = 1 and status = 0 ) ORDER BY date desc LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_column` LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant Article - assumed 'Article' /mnt/share/ishop.com/Application/Runtime/Cache/Home/58c9b418295366ada92ef91abf88ff39.php 第 175 行.
+SQL: SELECT * FROM `think_article` WHERE ( com = 1 and status = 0 and column_id in (3,4,5,2) ) ORDER BY date desc LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_column` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant Article - assumed 'Article' /mnt/share/ishop.com/Application/Runtime/Cache/Home/58c9b418295366ada92ef91abf88ff39.php 第 203 行.
+SQL: SELECT * FROM `think_article` WHERE ( com = 1 and status = 0 and column_id in (7,8,9,10,11,6) ) ORDER BY date desc LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_column` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant Article - assumed 'Article' /mnt/share/ishop.com/Application/Runtime/Cache/Home/58c9b418295366ada92ef91abf88ff39.php 第 231 行.
+SQL: SELECT * FROM `think_article` WHERE ( com = 1 and status = 0 and column_id in (13,14,15,16,17,12) ) ORDER BY date desc LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_column` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant Article - assumed 'Article' /mnt/share/ishop.com/Application/Runtime/Cache/Home/58c9b418295366ada92ef91abf88ff39.php 第 259 行.
+SQL: SELECT * FROM `think_article` WHERE ( com = 1 and status = 0 and column_id in (19,18) ) ORDER BY date desc LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_column` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant Article - assumed 'Article' /mnt/share/ishop.com/Application/Runtime/Cache/Home/58c9b418295366ada92ef91abf88ff39.php 第 287 行.
+SQL: SELECT * FROM `think_article` WHERE ( com = 1 and status = 0 and column_id in (26,27,28,29,20) ) ORDER BY date desc LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_column` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant Article - assumed 'Article' /mnt/share/ishop.com/Application/Runtime/Cache/Home/58c9b418295366ada92ef91abf88ff39.php 第 315 行.
+SQL: SELECT * FROM `think_article` WHERE ( com = 1 and status = 0 and column_id in (22,23,24,25,21) ) ORDER BY date desc LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_column` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.861077s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.861209s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.020671s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.020767s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.022909s ]
+INFO: [ app_end ] --END-- [ RunTime:0.023005s ]
+

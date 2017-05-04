@@ -1,0 +1,277 @@
+<include file="Common:header"/>
+<!--BEGIN FORM STYLE-->
+<link rel="stylesheet" type="text/css" href="__METRONIC_CSS__/bootstrap-fileupload.css" />
+<!--END FORM STYLE-->
+<!-- BEGIN CONTAINER -->
+<div class="page-container">
+    <!-- BEGIN SIDEBAR -->
+    <include file="Common:nav"/>
+    <!-- END SIDEBAR -->
+    <!-- BEGIN PAGE -->
+    <div class="page-content fill-content">
+        <!-- BEGIN PAGE CONTAINER-->
+        <div class="container-fluid">
+            <!-- BEGIN PAGE HEADER-->
+            <div class="row-fluid">
+                <div class="span12">
+                    <!-- BEGIN PAGE TITLE & BREADCRUMB-->
+                    <h3 class="page-title">
+                        Dashboard <small>statistics and more</small>
+                    </h3>
+                    <ul class="breadcrumb">
+                        <li>
+                            <i class="icon-home"></i>
+                            <a href="{:U('Index/index')}">首页</a>
+                            <i class="icon-angle-right"></i>
+                        </li>
+                        <notempty name="breadcrumb">
+                            {$breadcrumb}
+                            <else/>
+                            <li><a href="#">Dashboard</a></li>
+                        </notempty>
+                        <li class="pull-right no-text-shadow">
+                            <div id="dashboard-report-range" class="dashboard-date-range tooltips no-tooltip-on-touch-device responsive"
+                                 data-tablet="" data-desktop="tooltips" data-placement="top" data-original-title="Change dashboard date range">
+                                <i class="icon-calendar"></i>
+                                <span></span>
+                                <i class="icon-angle-down"></i>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- END PAGE TITLE & BREADCRUMB-->
+                </div>
+            </div>
+            <!-- END PAGE HEADER-->
+            <!--BEGIN PAGER FORM-->
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="portlet box purple">
+                        <div class="portlet-title">
+                            <div class="caption"><i class="icon-reorder"></i>{$model.name|default='基本配置'}</div>
+                            <div class="tools">
+                                <a href="javascript:;" class="collapse"></a>
+                                <a href="#portlet-config" data-toggle="modal" class="config"></a>
+                                <a href="javascript:;" class="reload" data-role="__METRONIC_IMG__/fancybox_loading.gif" data-form="form_sample_1" data-reset="1"></a>
+                                <a href="javascript:;" class="remove"></a>
+                            </div>
+                        </div>
+                        <div class="portlet-body form">
+                            <!-- BEGIN FORM-->
+                            <form action="__URL__/advancedhandler" method="post" id="form_sample_3" class="form-horizontal" novalidate="novalidate" enctype="multipart/form-data">
+                                <div class="alert alert-error hide">
+                                    <button class="close" data-dismiss="alert"></button>
+                                    请将必填的填写完整
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label">开启支付</label>
+                                    <div class="controls">
+                                        <label class="radio">
+                                            <input type="radio" name="pay" <empty name="conf.pay">checked</empty> value="0"  <eq name="conf.pay" value="0">checked</eq> >开启
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="pay"   value="1" <eq name="conf.pay" value="1">checked</eq>>禁用
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label">支付方式</label>
+                                    <div class="controls">
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="pay_way[]"  value="0"  <eq name="conf.pay" value="0">checked</eq>>支付宝支付
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="pay_way[]"  value="1"  <eq name="conf.pay" value="1">checked</eq>>微信扫码支付
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="pay_way[]"  value="2"  <eq name="conf.pay" value="2">checked</eq>>JSAPI支付
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="control-group hide">
+                                	<label class="control-label">支付宝配置</label>
+                                	<div class="controls">
+                                		<input type="text" name="partner" class="m-wrap small"  value="" placeholder="商户号">
+                                		<input type="text" name="return_url" class="m-wrap"  value="" placeholder="同步回掉地址">
+                                		<input type="text" name="notify_url" class="m-wrap" value="" placeholder="异步回掉地址">
+                                	</div>
+                                </div>
+                                <div class="control-group hide">
+                                	<label class="control-label">微信支付配置</label>
+                                	<div class="controls">
+                                		<input type="text" name="pay_way" class="m-wrap small"  value="" placeholder="公众号标识APPID">
+                                		<input type="text" name="pay_way" class="m-wrap"  value="" placeholder="受理商标识MCHID">
+                                		<input type="text" name="pay_way" class="m-wrap" value="" placeholder="商户支付密钥Key">
+                                		<input type="text" name="pay_way" class="m-wrap" value="" placeholder="APPSECRET">
+                                		<div class="margin-top-10"></div>
+                                		<input type="text" name="return_url" class="m-wrap"  value="" placeholder="同步回掉地址">
+                                		<input type="text" name="notify_url" class="m-wrap" value="" placeholder="异步回掉地址">
+                                	</div>
+                                </div>
+                                <div class="control-group hide">
+                                	<label class="control-label">JSAPI额外配置</label>
+                                	<div class="controls">
+                                		<input type="text" name="pay_way" class="m-wrap"  value="" placeholder="JSAPI授权目录">
+                                		<input type="text" name="pay_way" class="m-wrap"  value="" placeholder="JSAPI授权回掉地址">
+                                	</div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label">开启第三方登陆</label>
+                                    <div class="controls">
+                                        <label class="radio">
+                                            <input type="radio" name="third_login" <empty name="conf.hobby_com">checked</empty> value="0"  <eq name="conf.hobby_com" value="0">checked</eq> >开启
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="third_login"   value="1" <eq name="conf.hobby_com" value="1">checked</eq>>禁用
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label">登陆方式</label>
+                                    <div class="controls">
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="third[]"  value="0"  <eq name="conf.pay" value="0">checked</eq>>QQ登陆
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="third[]"  value="1"  <eq name="conf.pay" value="1">checked</eq>>微信登陆
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="third[]"  value="2"  <eq name="conf.pay" value="2">checked</eq>>微博登陆
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="third[]"  value="2"  <eq name="conf.pay" value="2">checked</eq>>百度登陆
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="third[]"  value="2"  <eq name="conf.pay" value="2">checked</eq>>人人登陆
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="control-group ">
+                                	<label class="control-label">支付宝配置</label>
+                                	<div class="controls">
+                                		<input type="text" name="partner" class="m-wrap small"  value="" placeholder="商户号">
+                                		<input type="text" name="return_url" class="m-wrap"  value="" placeholder="同步回掉地址">
+                                		<input type="text" name="notify_url" class="m-wrap" value="" placeholder="异步回掉地址">
+                                	</div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label">开启兴趣推荐</label>
+                                    <div class="controls">
+                                        <label class="radio">
+                                            <input type="radio" name="hobby_com" <empty name="conf.hobby_com">checked</empty> value="0"  <eq name="conf.hobby_com" value="0">checked</eq> >开启
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="hobby_com"   value="1" <eq name="conf.hobby_com" value="1">checked</eq>>禁用
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="submit" class="btn purple">提交</button>
+                                    <button type="button" class="btn" onclick="window.history.go(-1);">返回</button>
+                                </div>
+                            </form>
+                            <!-- END FORM-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--END PAGER FORM-->
+        </div>
+        <!-- END PAGE CONTAINER-->
+    </div>
+    <!-- END PAGE -->
+</div>
+<link rel="stylesheet" href="__PLUG__/Uploadify/uploadify.css" />
+<script type="text/javascript" src="__PLUG__/Uploadify/jquery.uploadify.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('form').submit(function(e){
+            e.preventDefault();
+        	var index = layer.load(2,{
+				shade: [0.4,'#000'] //0.1透明度的白色背景
+			});
+            $.post($('form').attr('action'),$('form').serialize(),function(data){
+                layer.closeAll(index);
+				if(data.status==1){
+                    layer.alert(data.msg,{icon:6,end:function(){
+                        location.href = data.redirect;
+                    }});
+                }else {
+                    layer.alert(data.msg,{icon:5});
+                }
+            });
+        });
+	});
+	function imgView(pic_url){
+			if(pic_url == 'master'){
+				pic_url = $('#reply_img').val();
+			}
+			if(pic_url==''){
+				layer.alert('你还没有上传图片',{icon:5});
+				return false;
+			}
+			layer.open({
+				type: 1,
+				title: '查看图片',
+				skin: 'layui-layer-rim', //加上边框
+				area: ['500px', '400px'], //宽高
+				content: "<div style='max-width:500px; max-height:400px; overflow:auto;'><img style='max-width:500px; max-height:400px; overflow:auto;' src='"+pic_url+"'  /></div>"
+			});
+		}
+
+		//照片
+		$("#fileImg").uploadify({
+			fileTypeDesc    : '图片文件',
+			fileTypeExts    : '*.png;*.jpg;*.jpeg;*.gif;',
+			buttonText      : '选择图片',
+			buttonClass     : 'upload_button',
+			swf             : '__PLUG__/Uploadify/uploadify.swf',
+			uploader        : "{:U('Uploadify/uploadImg')}",
+			multi           : false,
+			onUploadSuccess : function(file, data, response) {
+				$("#reply_img").val(data);
+				$("#images_preview").attr('src',data);
+				$('#images_preview').show();
+				$('#img_b').show();
+				$('#img_c').show();
+			}
+		});
+		function noMasterImg(){
+			$src = $("#images_preview").attr('src');
+			if($src==''){
+				layer.alert('您好没有上传图片',{icon:5});
+				return false;
+			}
+			$.post("{:U('Uploadify/delmg')}",{src:$src},function(data){
+				if(data.status==1){
+					layer.msg(data.msg,{icon:1});
+					$("#reply_img").val('');
+					$('#images_preview').attr('src','');
+					$('#img_c').hide();
+					$('#images_preview').hide();
+				}else{
+					layer.alert(data.msg,{icon:5});
+				}
+			});
+		}
+		function deleteImage(obj) {
+			var url = $(obj).attr('data-path');
+			if(url==''){
+				layer.alert('删除图片不存在',{icon:2});
+			}
+			var index = layer.load(2, {
+				shade: [0.4,'#fff'] //0.1透明度的白色背景
+			});
+			$.post("{:U('Uploadify/delmg')}",{src:url},function(data){
+				if(data.status==1){
+					layer.msg(data.msg,{icon:1,end:function () {
+						layer.closeAll();
+						$(obj).parent('span.imageDiv').remove();
+					}});
+				}else{
+					layer.msg(data.msg,{icon:5});
+				}
+			});
+		}
+</script>
+<!-- END CONTAINER -->
+<include file="Common:footer"/>

@@ -1,0 +1,930 @@
+[ 2016-10-10T16:46:31+08:00 ] 192.168.188.184 /Admin/Single/index?id=16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006829s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 9 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 13 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_config` ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_column` WHERE ( type=3 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_column` WHERE `status` = 0 AND `type` < 3 ORDER BY id asc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_model` WHERE `title` = 'single' LIMIT 1   [ RunTime:0.0001s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and title="index" ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_model` WHERE ( fid= and title="index" ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and title="index" ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_model` WHERE ( fid= and title="index" ) LIMIT 1  
+
+[ 2016-10-10T16:46:58+08:00 ] 192.168.188.184 /Admin/Single/index?id=16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009064s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 9 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 13 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_config` ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_column` WHERE ( type=3 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_column` WHERE `status` = 0 AND `type` < 3 ORDER BY id asc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_model` WHERE `title` = 'single' LIMIT 1   [ RunTime:0.0001s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and title="index" ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_model` WHERE ( fid= and title="index" ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and title="index" ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_model` WHERE ( fid= and title="index" ) LIMIT 1  
+
+[ 2016-10-10T16:46:58+08:00 ] 192.168.188.184 /Admin/Single/index?id=16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007345s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 9 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 13 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_config` ORDER BY id desc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_column` WHERE ( type=3 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_column` WHERE `status` = 0 AND `type` < 3 ORDER BY id asc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_model` WHERE `title` = 'single' LIMIT 1   [ RunTime:0.0001s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and title="index" ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_model` WHERE ( fid= and title="index" ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and title="index" ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_model` WHERE ( fid= and title="index" ) LIMIT 1  
+
+[ 2016-10-10T16:47:14+08:00 ] 192.168.188.184 /Admin/Single/index?id=16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007192s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 9 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 13 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_config` ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_column` WHERE ( type=3 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_column` WHERE `status` = 0 AND `type` < 3 ORDER BY id asc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_model` WHERE `title` = 'single' LIMIT 1   [ RunTime:0.0001s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and title="index" ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_model` WHERE ( fid= and title="index" ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and title="index" ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_model` WHERE ( fid= and title="index" ) LIMIT 1  
+
+[ 2016-10-10T16:47:15+08:00 ] 192.168.188.184 /Admin/Single/index?id=16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007449s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 9 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 13 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_config` ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_column` WHERE ( type=3 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_column` WHERE `status` = 0 AND `type` < 3 ORDER BY id asc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_model` WHERE `title` = 'single' LIMIT 1   [ RunTime:0.0001s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and title="index" ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_model` WHERE ( fid= and title="index" ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and title="index" ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_model` WHERE ( fid= and title="index" ) LIMIT 1  
+
+[ 2016-10-10T16:47:32+08:00 ] 192.168.188.184 /Admin/Article/index?id=16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007106s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007157s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 9 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 13 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_config` ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_column` WHERE ( type=3 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_column` WHERE `status` = 0 AND `type` < 3 ORDER BY id asc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_model` WHERE `title` = 'article' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=11 and title="index" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: select version() as ver [ RunTime:0.0001s ]
+SQL: SHOW TABLE STATUS FROM db_kunjue LIKE 'think_%' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE ( title="article" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=11 and title="index" ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type` FROM `think_column` WHERE `status` = 0 AND `type` NOT IN ('6')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_article` WHERE `title` LIKE '%%' AND `column_id` = 16 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_article` WHERE `title` LIKE '%%' AND `column_id` = 16 LIMIT 0,20   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000256s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000294s ]
+NOTIC: [8] Undefined variable: config /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 5 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 221 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 221 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 221 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 221 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 221 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 221 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 221 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 221 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 221 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+SQL: SELECT * FROM `think_column` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: status /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 358 行.
+NOTIC: [8] Undefined index: status /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 359 行.
+NOTIC: [8] Undefined index: name /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 364 行.
+NOTIC: [8] Undefined variable: data /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 374 行.
+NOTIC: [8] Undefined variable: data /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 374 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.094108s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.094136s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006818s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006851s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009074s ]
+
+[ 2016-10-10T16:47:37+08:00 ] 192.168.188.184 /Admin/Single/index?id=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007148s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007199s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 9 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 13 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_config` ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_column` WHERE ( type=3 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_column` WHERE `status` = 0 AND `type` < 3 ORDER BY id asc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_model` WHERE `title` = 'single' LIMIT 1   [ RunTime:0.0001s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and title="index" ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_model` WHERE ( fid= and title="index" ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and title="index" ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_model` WHERE ( fid= and title="index" ) LIMIT 1  
+
+[ 2016-10-10T16:48:23+08:00 ] 192.168.188.184 /Admin/Single/index?id=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006608s ]
+
+[ 2016-10-10T16:48:46+08:00 ] 192.168.188.184 /Admin/Single/index?id=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006430s ]
+
+[ 2016-10-10T16:48:55+08:00 ] 192.168.188.184 /Admin/Single/index?id=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006574s ]
+
+[ 2016-10-10T16:49:17+08:00 ] 192.168.188.184 /Admin/Single/index?id=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008080s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008144s ]
+
+[ 2016-10-10T16:49:24+08:00 ] 192.168.188.184 /Admin/Single/index?id=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007159s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007213s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 9 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 13 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_config` ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-10-10T16:49:31+08:00 ] 192.168.188.184 /Admin/Single/index?id=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006751s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 9 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 13 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_config` ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-10-10T16:49:37+08:00 ] 192.168.188.184 /Admin/Single/index?id=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006642s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 9 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 13 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_config` ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_column` WHERE ( type=3 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_column` WHERE `status` = 0 AND `type` < 3 ORDER BY id asc  [ RunTime:0.0001s ]
+
+[ 2016-10-10T16:49:53+08:00 ] 192.168.188.184 /Admin/Single/index?id=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007063s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 9 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 13 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_config` ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_column` WHERE ( type=3 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_column` WHERE `status` = 0 AND `type` < 3 ORDER BY id asc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_model` WHERE `title` = 'single' LIMIT 1   [ RunTime:0.0001s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and title="index" ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_model` WHERE ( fid= and title="index" ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and title="index" ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_model` WHERE ( fid= and title="index" ) LIMIT 1  
+
+[ 2016-10-10T16:49:59+08:00 ] 192.168.188.184 /Admin/Single/index?id=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007364s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 9 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 13 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_config` ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_column` WHERE ( type=3 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_column` WHERE `status` = 0 AND `type` < 3 ORDER BY id asc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_model` WHERE `title` = 'single' LIMIT 1   [ RunTime:0.0001s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and title="index" ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_model` WHERE ( fid= and title="index" ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and title="index" ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_model` WHERE ( fid= and title="index" ) LIMIT 1  
+
+[ 2016-10-10T16:50:05+08:00 ] 192.168.188.184 /Admin/Single/index?id=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006524s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 9 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 13 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_config` ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_column` WHERE ( type=3 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_column` WHERE `status` = 0 AND `type` < 3 ORDER BY id asc  [ RunTime:0.0001s ]
+
+[ 2016-10-10T16:50:27+08:00 ] 192.168.188.184 /Admin/Article/index?id=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007008s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 9 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 13 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_config` ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_column` WHERE ( type=3 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_column` WHERE `status` = 0 AND `type` < 3 ORDER BY id asc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_model` WHERE `title` = 'article' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=11 and title="index" ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: select version() as ver [ RunTime:0.0001s ]
+SQL: SHOW TABLE STATUS FROM db_kunjue LIKE 'think_%' [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE ( title="article" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=11 and title="index" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type` FROM `think_column` WHERE `status` = 0 AND `type` NOT IN ('6')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_article` WHERE `title` LIKE '%%' AND `column_id` = 9 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_article` WHERE `title` LIKE '%%' AND `column_id` = 9 LIMIT 0,20   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000304s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000344s ]
+NOTIC: [8] Undefined variable: config /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 5 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 221 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 221 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 221 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 221 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 221 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 221 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 221 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 221 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 221 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+SQL: SELECT * FROM `think_column` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: status /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 358 行.
+NOTIC: [8] Undefined index: status /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 359 行.
+NOTIC: [8] Undefined index: name /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 364 行.
+NOTIC: [8] Undefined variable: data /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 374 行.
+NOTIC: [8] Undefined variable: data /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 374 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089723s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008295s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008400s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008470s ]
+
+[ 2016-10-10T16:50:50+08:00 ] 192.168.188.184 /Admin/Single/index?id=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007416s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 9 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 13 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_config` ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_column` WHERE ( type=3 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_column` WHERE `status` = 0 AND `type` < 3 ORDER BY id asc  [ RunTime:0.0001s ]
+
+[ 2016-10-10T16:51:34+08:00 ] 192.168.188.184 /Admin/Single/index?id=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006815s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006865s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 9 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 13 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_config` ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_column` WHERE ( type=3 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_column` WHERE `status` = 0 AND `type` < 3 ORDER BY id asc  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: uri /mnt/share/kunjue.com/Application/Admin/Controller/BaseController.class.php 第 126 行.
+SQL: select version() as ver [ RunTime:0.0001s ]
+SQL: SHOW TABLE STATUS FROM db_kunjue LIKE 'think_%' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE ( title="single" ) LIMIT 1   [ RunTime:0.0002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and title="index" ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_model` WHERE ( fid= and title="index" ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and title="index" ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_model` WHERE ( fid= and title="index" ) LIMIT 1  
+
+[ 2016-10-10T16:51:50+08:00 ] 192.168.188.184 /Admin/Single/index?id=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006569s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 9 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 13 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_config` ORDER BY id desc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_column` WHERE ( type=3 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_column` WHERE `status` = 0 AND `type` < 3 ORDER BY id asc  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: uri /mnt/share/kunjue.com/Application/Admin/Controller/BaseController.class.php 第 125 行.
+SQL: select version() as ver [ RunTime:0.0001s ]
+SQL: SHOW TABLE STATUS FROM db_kunjue LIKE 'think_%' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE ( title="single" ) LIMIT 1   [ RunTime:0.0000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and title="index" ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_model` WHERE ( fid= and title="index" ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and title="index" ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_model` WHERE ( fid= and title="index" ) LIMIT 1  
+
+[ 2016-10-10T16:52:07+08:00 ] 192.168.188.184 /Admin/Single/index?id=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007733s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 9 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 13 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_config` ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_column` WHERE ( type=3 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_column` WHERE `status` = 0 AND `type` < 3 ORDER BY id asc  [ RunTime:0.0001s ]
+SQL: select version() as ver [ RunTime:0.0001s ]
+SQL: SHOW TABLE STATUS FROM db_kunjue LIKE 'think_%' [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE ( title="single" ) LIMIT 1   [ RunTime:0.0001s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and title="index" ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_model` WHERE ( fid= and title="index" ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and title="index" ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_model` WHERE ( fid= and title="index" ) LIMIT 1  
+
+[ 2016-10-10T16:52:08+08:00 ] 192.168.188.184 /Admin/Single/index?id=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007425s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 9 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 13 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_config` ORDER BY id desc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_column` WHERE ( type=3 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_column` WHERE `status` = 0 AND `type` < 3 ORDER BY id asc  [ RunTime:0.0001s ]
+SQL: select version() as ver [ RunTime:0.0001s ]
+SQL: SHOW TABLE STATUS FROM db_kunjue LIKE 'think_%' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE ( title="single" ) LIMIT 1   [ RunTime:0.0000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and title="index" ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_model` WHERE ( fid= and title="index" ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and title="index" ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_model` WHERE ( fid= and title="index" ) LIMIT 1  
+
+[ 2016-10-10T16:52:15+08:00 ] 192.168.188.184 /Admin/Single/index?id=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006320s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 9 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 13 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_config` ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_column` WHERE ( type=3 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_column` WHERE `status` = 0 AND `type` < 3 ORDER BY id asc  [ RunTime:0.0001s ]
+SQL: select version() as ver [ RunTime:0.0001s ]
+SQL: SHOW TABLE STATUS FROM db_kunjue LIKE 'think_%' [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type` FROM `think_column` WHERE `status` = 0 AND `type` NOT IN ('6')  [ RunTime:0.0000s ]
+
+[ 2016-10-10T16:52:44+08:00 ] 192.168.188.184 /Admin/Single/index?id=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008101s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008153s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 9 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 13 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_config` ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_column` WHERE ( type=3 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_column` WHERE `status` = 0 AND `type` < 3 ORDER BY id asc  [ RunTime:0.0001s ]
+SQL: select version() as ver [ RunTime:0.0001s ]
+SQL: SHOW TABLE STATUS FROM db_kunjue LIKE 'think_%' [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type` FROM `think_column` WHERE `status` = 0 AND `type` NOT IN ('6')  [ RunTime:0.0001s ]
+ERR: 模板不存在:./Application/Admin/View/Single/index.html
+
+[ 2016-10-10T16:52:49+08:00 ] 192.168.188.184 /Admin/Article/index?id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007734s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 9 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 13 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_config` ORDER BY id desc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_column` WHERE ( type=3 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_column` WHERE `status` = 0 AND `type` < 3 ORDER BY id asc  [ RunTime:0.0001s ]
+SQL: select version() as ver [ RunTime:0.0001s ]
+SQL: SHOW TABLE STATUS FROM db_kunjue LIKE 'think_%' [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type` FROM `think_column` WHERE `status` = 0 AND `type` NOT IN ('6')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_article` WHERE `title` LIKE '%%' AND `column_id` = 6 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_article` WHERE `title` LIKE '%%' AND `column_id` = 6 LIMIT 0,20   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000254s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000294s ]
+NOTIC: [8] Undefined variable: config /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 5 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 221 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 221 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 221 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 221 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 221 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 221 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 221 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 221 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 221 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+SQL: SELECT * FROM `think_column` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: status /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 358 行.
+NOTIC: [8] Undefined index: status /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 359 行.
+NOTIC: [8] Undefined index: name /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 364 行.
+NOTIC: [8] Undefined variable: data /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 374 行.
+NOTIC: [8] Undefined variable: data /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 374 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090452s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090484s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007354s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007392s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008012s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008062s ]
+
+[ 2016-10-10T16:52:54+08:00 ] 192.168.188.184 /Admin/Article/index?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006939s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006998s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 9 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 13 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_config` ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_column` WHERE ( type=3 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_column` WHERE `status` = 0 AND `type` < 3 ORDER BY id asc  [ RunTime:0.0001s ]
+SQL: select version() as ver [ RunTime:0.0006s ]
+SQL: SHOW TABLE STATUS FROM db_kunjue LIKE 'think_%' [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type` FROM `think_column` WHERE `status` = 0 AND `type` NOT IN ('6')  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_article` WHERE `title` LIKE '%%' AND `column_id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_article` WHERE `title` LIKE '%%' AND `column_id` = 3 LIMIT 0,20   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000263s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000314s ]
+NOTIC: [8] Undefined variable: config /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 5 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 221 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 221 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 221 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 221 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 221 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 221 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 221 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 221 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 221 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 272 行.
+SQL: SELECT * FROM `think_column` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: status /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 358 行.
+NOTIC: [8] Undefined index: status /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 359 行.
+NOTIC: [8] Undefined index: name /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 364 行.
+NOTIC: [8] Undefined variable: data /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 374 行.
+NOTIC: [8] Undefined variable: data /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 374 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090540s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090575s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008203s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008261s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007746s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007808s ]
+
+[ 2016-10-10T16:52:55+08:00 ] 192.168.188.184 /Admin/Article/add?id=3&p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008337s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 9 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 13 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_config` ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_column` WHERE ( type=3 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_column` WHERE `status` = 0 AND `type` < 3 ORDER BY id asc  [ RunTime:0.0001s ]
+SQL: select version() as ver [ RunTime:0.0001s ]
+SQL: SHOW TABLE STATUS FROM db_kunjue LIKE 'think_%' [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type` FROM `think_column` WHERE `status` = 0 AND `type` NOT IN ('6')  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: map /mnt/share/kunjue.com/Application/Admin/Controller/ArticleController.class.php 第 30 行.
+SQL: SELECT * FROM `think_column`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000247s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000285s ]
+NOTIC: [8] Undefined variable: config /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 5 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 225 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 225 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 225 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 225 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 225 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 225 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 225 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 225 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 225 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 276 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 276 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 276 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 276 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 276 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 276 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 276 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 276 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 276 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 276 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 276 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 276 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 276 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 276 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 276 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 276 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 276 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 276 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 276 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 276 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 276 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 276 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 276 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 276 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 276 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 276 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 276 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 276 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 276 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 276 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 276 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 276 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 276 行.
+NOTIC: [8] Use of undefined constant volt - assumed 'volt' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 276 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 276 行.
+NOTIC: [8] Use of undefined constant control - assumed 'control' /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 276 行.
+SQL: SELECT * FROM `think_column` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: article /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 370 行.
+NOTIC: [8] Undefined variable: article /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 378 行.
+NOTIC: [8] Undefined variable: article /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 384 行.
+NOTIC: [8] Undefined variable: article /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 390 行.
+NOTIC: [8] Undefined variable: article /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 397 行.
+NOTIC: [8] Undefined variable: article /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 406 行.
+NOTIC: [8] Undefined variable: article /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 407 行.
+NOTIC: [8] Undefined variable: article /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 408 行.
+NOTIC: [8] Undefined variable: article /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 409 行.
+NOTIC: [8] Undefined variable: article /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 410 行.
+NOTIC: [8] Undefined variable: article /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 411 行.
+NOTIC: [8] Undefined variable: article /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 424 行.
+NOTIC: [8] Undefined variable: article /mnt/share/kunjue.com/Application/Runtime/Cache/Admin/e16cf278f1c326e72baf6415dbd5ab87.php 第 427 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.102929s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.102971s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006172s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007086s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007129s ]
+
+[ 2016-10-10T16:53:02+08:00 ] 192.168.188.184 /Admin/Single/index?id=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008104s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 9 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 13 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_config` ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_column` WHERE ( type=3 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_column` WHERE `status` = 0 AND `type` < 3 ORDER BY id asc  [ RunTime:0.0001s ]
+SQL: select version() as ver [ RunTime:0.0001s ]
+SQL: SHOW TABLE STATUS FROM db_kunjue LIKE 'think_%' [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`fid`,`title`,`name`,`type` FROM `think_column` WHERE `status` = 0 AND `type` NOT IN ('6')  [ RunTime:0.0001s ]
+ERR: 模板不存在:./Application/Admin/View/Single/index.html
+

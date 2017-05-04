@@ -1,0 +1,96 @@
+<?php if (!defined('THINK_PATH')) exit();?><link rel="stylesheet" href="/Public/plug/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/Public/css/base.css"/>
+<link rel="stylesheet" type="text/css" href="/Public/plug/Font-Awesome-3.2.1/css/font-awesome.min.css"/>
+<link rel="stylesheet" type="text/css" href="/Public/css/city-picker.css"/>
+<script src="/Public/js/jquery-1.10.1.min.js"></script>
+<script src="/Public/plug/bootstrap/js/bootstrap.min.js"></script>
+<script src="/Public/plug/jquery.validate/jquery.validate.min.js" type="text/javascript"></script>
+<script src="/Public/plug/jquery.validate/my.rules.js" type="text/javascript"></script>
+<script src="/Public/plug/layer/layer.js" type="text/javascript"></script>
+
+<div style="padding:10px;">
+    <form action="<?php echo U('user/update_nickname');?>" autocomplete="off" id="form" role="form">
+        <div class="form-group form-group-lg padding-top-10">
+            <div class="form-group form-group-lg padding-top-10">
+                <div class="input-group">
+                    <div class="input-group-addon"><i class="icon-user"></i></div>
+                    <input class="form-control" type="text" id="nickname" name="nickname" placeholder="请输入昵称">
+                    <input type="hidden" name="type" id="type" value="user" />
+                </div>
+            </div>
+            <div class="form-group form-group-lg padding-top-10">
+                <div class="input-group">
+                    <div class="input-group-addon">
+                        <i class="icon-key"></i>
+                    </div>
+                    <input class="form-control" type="text" id="verify" name="verify" placeholder="验证码">
+                    <div class="input-group-addon pointer">
+                        <img src="<?php echo U('user/verify');?>" width="110" height="32" onclick="javascript:this.src=this.src+'?_id='+Math.random()"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="col-lg-12 col-md-12 btn-block register-button update_nickname">修改</button>
+        </div>
+    </form>
+</div>
+<script>
+    $(function () {
+        $('#form').validate({
+            errorElement: 'span', //default input error message container
+            errorClass: 'help-block', // default input error message class
+            focusInvalid: false, // do not focus the last invalid input
+            ignore: "",
+            rules: {
+                nickname: {
+                    required: true,
+                    remote:{
+                        type:"POST",
+                        url:"<?php echo U('user/check_nickname');?>",
+                        data:{
+                            nickname:function(){return $('#nickname').val();}
+                        }
+                    }
+                },
+                verify:{
+                    required:true
+                }
+            },
+            messages: { // custom messages for radio buttons and checkboxes
+                nickname: {
+                    required: "*昵称不能为空",
+                    remote:"*昵称应经存在"
+                },verify:{
+                    required:'*验证码不能为空'
+                }
+            },
+            highlight : function(element) {
+                $(element).closest('.form-group').removeClass('has-success').addClass('has-error');
+            },
+            success : function(label) {
+                label.closest('.form-group').removeClass('has-error').addClass('has-success');
+                label.remove();
+            },
+            errorPlacement : function(error, element) {
+                element.parent('div').parent('div').append(error);
+            }
+        });
+
+        $('#form').submit(function(e){
+            e.preventDefault();
+            if($('#form').valid()){
+                $.post($(this).attr('action'),$(this).serialize(),function(result){
+                    layer.closeAll();
+                    if(result.status==1){
+                        layer.alert(result.msg,{icon:1,end:function(){
+                            window.top.location.href = result.redirect;
+                        }});
+                    }else{
+                        layer.alert(result.msg,{icon:11});
+                    }
+                });
+            }
+        });
+    });
+</script>

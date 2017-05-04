@@ -1,0 +1,88 @@
+﻿<include file="Common:header"/>
+<div class="thumbnailb">
+	<div class="fullSlide margin-none padding-none">
+		<div class="bd">
+			<ul>
+				<volist name="carousel" id="vo">
+					<li style="background:url({$vo.image}) center 0 no-repeat;" data-image="{$vo.image}"><a  href="{$vo.url}" target="_blank"></a></li>
+				</volist>
+			</ul>
+		</div>
+		<div class="hd">
+			<ul></ul>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid margin-top-10">
+	<div class="col-xs-12 col-lg-4 col-md-4">
+		<a href="">
+			<img src="__IMAGES__/5.jpg" width="90%" alt="" class="img-rounded">
+		</a>
+	</div>
+	<div class="col-xs-12 col-lg-4 col-md-4">
+		<a href="">
+			<img src="__IMAGES__/9.jpg"  width="90%" alt="" class="img-rounded">
+		</a>
+	</div>
+	<div class="col-xs-12 col-lg-4 col-md-4">
+		<a href="">
+			<img src="__IMAGES__/6.jpg"  width="99.8%" alt="" class="img-rounded">
+		</a>
+	</div>
+</div>
+<script type="text/javascript" src="__PLUG__/rgbaster.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$(".fullSlide").slide({
+			titCell:".hd ul",
+			mainCell:".bd ul",
+			effect:"fold",
+			autoPlay:true,
+			autoPage:true,
+			trigger:"click",
+			startFun:function(i,c,s){
+				var elemet = $('div.bd ul li').eq(i);
+				var img = elemet.attr('data-image');
+				RGBaster.colors(img, {
+					exclude: [ 'rgb(255,255,255)', 'rgb(0,0,0)' ],
+					success: function(payload) {
+						elemet.css("background-color", payload.dominant);
+					}
+				});
+			}
+		});
+		$('.dropdown').mouseover(function(){
+			var width = $('.navbar1').width();
+			$('div.dropdown-menu').width(width/2);
+			var left = -$(this).offset().left/2;
+			var height = $(this).children('.dropdown-menu').height()+90;
+			$('.navbar1').height(height).css('background-color',"#FFFFFF");
+			$('.navbar-nav a').css('color','#000');
+			$('div.dropdown-menu').css('left',left+'px');
+			$(this).addClass('open');
+			$(this).children('ul.dropdown-menu').css('margin-top','-1px');
+		}).mouseleave(function(){
+			$(this).removeClass('open');
+			$('.navbar1').height(50);
+			$('.navbar-nav a').css('color','#fff');
+			$('.navbar1').removeAttr('style');
+		});
+
+		$('.product-items').mouseover(function(){
+			$(this).css('opacity','1').siblings('.product-items').css('opacity','.5');
+		});
+		$('.home-link').mouseover(function(){
+			$(this).css('background','none');
+			$(this).children('a').css('background','none');
+		});
+		$('ul.navbar-nav li.dropdown a').click(function (e) {
+			e.preventDefault();
+			var url = $(this).attr('href');
+			if(url!=''|| url.split('0')<0){
+				window.location.href = url;
+			}
+		});
+	});
+</script>
+<include file="Common:footer"/>
